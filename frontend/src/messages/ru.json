@@ -1,0 +1,33 @@
+{
+  "HomePage": {
+    "title": "Привет, мир!"
+  },
+  "LocaleLayout": {
+    "title": "Заголовок",
+    "description": "Описание"
+  },
+  "Navigation": {
+    "projects": "Портфолио",
+    "reviews": "Отзывы",
+    "services": "Услуги",
+    "about": "О нас"
+  },
+  "Contacts": {
+    "title": "Контакты"
+  },
+  "ContactSidebar": {
+    "title": "Связаться с нами",
+    "phone": {
+      "label": "Телефон"
+    },
+    "email": {
+      "label": "Электронная почта"
+    },
+    "whatsapp": {
+      "label": "WhatsApp"
+    },
+    "telegram": {
+      "label": "Telegram"
+    }
+  }
+}

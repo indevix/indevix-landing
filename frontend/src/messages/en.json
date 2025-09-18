@@ -1,0 +1,33 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "LocaleLayout": {
+    "title": "Title",
+    "description": "Description"
+  },
+  "Navigation": {
+    "projects": "Projects",
+    "reviews": "Reviews",
+    "services": "Services",
+    "about": "About"
+  },
+  "Contacts": {
+    "title": "Contacts"
+  },
+  "ContactSidebar": {
+    "title": "Contact Us",
+    "phone": {
+      "label": "Phone"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "whatsapp": {
+      "label": "WhatsApp"
+    },
+    "telegram": {
+      "label": "Telegram"
+    }
+  }
+}
