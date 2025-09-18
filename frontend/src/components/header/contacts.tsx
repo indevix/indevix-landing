@@ -3,7 +3,7 @@ import { Contact } from "./contact";
 import { contactsMeta } from "@config/contacts-meta";
 
 export function Contacts() {
-  const t = useTranslations("Contacts");
+  const t = useTranslations("ContactSidebar");
 
   return (
     <div className="flex items-center gap-5">

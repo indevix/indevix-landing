@@ -1,0 +1,27 @@
+{
+  "LocaleLayout": {
+    "title": "Başlık",
+    "description": "Açıklama"
+  },
+  "Navigation": {
+    "language": "Dil",
+    "projects": "Portföy",
+    "reviews": "Yorumlar",
+    "services": "Hizmetler",
+    "about": "Hakkımızda"
+  },
+  "ContactSidebar": {
+    "title": "İletişim",
+    "phone": {
+      "label": "Telefon"
+    },
+    "whatsapp": {
+      "title": "Bizim WhatsApp",
+      "label": "WhatsApp"
+    },
+    "telegram": {
+      "title": "Bizim Telegram",
+      "label": "Telegram"
+    }
+  }
+}

@@ -1,8 +1,8 @@
 export const contactsMeta = {
   phone: {
     label: "Phone",
-    href: "tel:+996111222333",
-    value: "+996 (111) 222-333",
+    href: "tel:+996508992993",
+    value: "+996 (508) 992-993",
   },
   email: {
     label: "Email",
@@ -11,7 +11,7 @@ export const contactsMeta = {
   },
   whatsapp: {
     label: "WhatsApp",
-    href: "https://wa.me/996111222333",
+    href: "https://wa.me/996508992993",
     value: "WhatsApp",
   },
   telegram: {

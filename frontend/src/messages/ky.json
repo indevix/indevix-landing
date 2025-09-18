@@ -1,0 +1,27 @@
+{
+  "LocaleLayout": {
+    "title": "Аталышы",
+    "description": "Сүрөттөө"
+  },
+  "Navigation": {
+    "language": "Тил",
+    "projects": "Портфолио",
+    "reviews": "Сын-пикир",
+    "services": "Кызматтар",
+    "about": "Биз жөнүндө"
+  },
+  "ContactSidebar": {
+    "title": "Контакттар",
+    "phone": {
+      "label": "Телефон"
+    },
+    "whatsapp": {
+      "title": "Биздин WhatsApp",
+      "label": "WhatsApp"
+    },
+    "telegram": {
+      "title": "Биздин Telegram",
+      "label": "Telegram"
+    }
+  }
+}

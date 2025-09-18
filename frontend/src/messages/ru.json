@@ -1,32 +1,26 @@
 {
-  "HomePage": {
-    "title": "Привет, мир!"
-  },
   "LocaleLayout": {
     "title": "Заголовок",
     "description": "Описание"
   },
   "Navigation": {
+    "language": "Язык",
     "projects": "Портфолио",
     "reviews": "Отзывы",
     "services": "Услуги",
     "about": "О нас"
   },
-  "Contacts": {
-    "title": "Контакты"
-  },
   "ContactSidebar": {
-    "title": "Связаться с нами",
+    "title": "Контакты",
     "phone": {
       "label": "Телефон"
     },
-    "email": {
-      "label": "Электронная почта"
-    },
     "whatsapp": {
+      "title": "Написать в WhatsApp",
       "label": "WhatsApp"
     },
     "telegram": {
+      "title": "Написать в Telegram",
       "label": "Telegram"
     }
   }

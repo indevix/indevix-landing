@@ -14,7 +14,7 @@ export function Contact({ children }: { children: ReactNode }) {
   return (
     <>
       <Button
-        className="text-sm md:text-base px-5 py-[10px] mx-[10px]"
+        className="text-sm md:text-base px-5 py-[10px] mx-[10px] h-[40px] md:h-[50px]"
         onClick={handleOpenModal}
       >
         {children}
