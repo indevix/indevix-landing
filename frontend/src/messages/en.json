@@ -23,5 +23,23 @@
       "title": "Write on Telegram",
       "label": "Telegram"
     }
+  },
+  "Hero": {
+    "title_1": "Planning. Design.",
+    "title_2": "Development.",
+    "direction": {
+      "web": {
+        "title": "Web",
+        "list": ["Landing Pages", "Corporate Websites", "Special Projects"]
+      },
+      "design": {
+        "title": "Design",
+        "list": ["Presentations", "UX/UI Design", "Branding"]
+      },
+      "automation": {
+        "title": "Automation",
+        "list": ["CRM", "Systems", "Admin Panels"]
+      }
+    }
   }
 }

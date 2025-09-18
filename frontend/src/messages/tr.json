@@ -23,5 +23,23 @@
       "title": "Bizim Telegram",
       "label": "Telegram"
     }
+  },
+  "Hero": {
+    "title_1": "Planlama. Tasarım.",
+    "title_2": "Geliştirme.",
+    "direction": {
+      "web": {
+        "title": "Web Siteleri",
+        "list": ["Landing Sayfaları", "Kurumsal Siteler", "Özel Projeler"]
+      },
+      "design": {
+        "title": "Tasarım",
+        "list": ["Sunumlar", "UX/UI Tasarım", "Markalaşma"]
+      },
+      "automation": {
+        "title": "Otomasyon",
+        "list": ["CRM", "Sistemler", "Yönetim Panelleri"]
+      }
+    }
   }
 }
