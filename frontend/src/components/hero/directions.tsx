@@ -11,12 +11,12 @@ export function Directions() {
   const t = useTranslations("Hero");
 
   return (
-    <article className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 py-15">
+    <section className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 py-15">
       {directions.map(({ id, icon: Icon }) => {
         const items: string[] = t.raw(`direction.${id}.list`);
 
         return (
-          <section
+          <div
             key={id}
             className="p-10 rounded-[40px] border border-border bg-card flex flex-col gap-10"
           >
@@ -31,9 +31,9 @@ export function Directions() {
                 ))}
               </ul>
             </div>
-          </section>
+          </div>
         );
       })}
-    </article>
+    </section>
   );
 }

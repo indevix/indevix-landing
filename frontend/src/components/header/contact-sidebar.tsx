@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { X } from "lucide-react";
 import { Button } from "@ui/button";
 import { contactsMeta } from "@config/contacts-meta";
+import { createPortal } from "react-dom";
 
 interface ContactSidebarProps {
   isOpen: boolean;
@@ -15,7 +16,7 @@ export function ContactSidebar({ isOpen, onClose }: ContactSidebarProps) {
 
   if (!isOpen) return null;
 
-  return (
+  return createPortal(
     <aside
       className={`fixed top-0 right-0 h-full w-80 bg-sidebar rounded-l-[50px] shadow-2xl z-50 transform transition-transform duration-300 ease-in-out ${
         isOpen ? "translate-x-0" : "translate-x-full"
@@ -75,6 +76,7 @@ export function ContactSidebar({ isOpen, onClose }: ContactSidebarProps) {
           </a>
         </Button>
       </section>
-    </aside>
+    </aside>,
+    document.getElementById("modal-root")!
   );
 }

@@ -12,11 +12,11 @@ export function NavigationLinks() {
         <Link
           key={link.href}
           href={link.href}
-          className="text-foreground text-xs md:text-sm relative overflow-hidden group"
+          className="text-foreground text-xs md:text-sm relative group"
         >
           {t(`${link.name}`)}
           <span
-            className="absolute left-1/2 -translate-x-1/2 bottom-0 w-0 group-hover:w-full h-[2px] bg-current transition-all duration-300 origin-center"
+            className="absolute z-100 left-1/2 -translate-x-1/2 bottom-0 w-0 group-hover:w-full h-[2px] bg-current transition-all duration-300 origin-center"
             aria-hidden="true"
           />
         </Link>

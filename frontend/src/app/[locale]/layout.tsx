@@ -1,12 +1,16 @@
 import { notFound } from "next/navigation";
 import { Locale, hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Tektur } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { ReactNode } from "react";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin", "cyrillic"] });
+const tektur = Tektur({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-tektur",
+});
 
 type LayoutProps = {
   children: ReactNode;
@@ -26,7 +30,8 @@ export async function generateMetadata(props: Omit<LayoutProps, "children">) {
   });
 
   return {
-    title: t("title"),
+    title: "Indevix",
+    description: t("description"),
   };
 }
 
@@ -39,9 +44,9 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   setRequestLocale(locale);
 
   return (
-    <html className="h-full" lang={locale}>
+    <html className="min-h-full" lang={locale}>
       <body
-        className={`${montserrat.className} flex h-full flex-col bg-background`}
+        className={`${montserrat.className} ${tektur.variable} flex min-h-full flex-col bg-background`}
       >
         <div id="modal-root" />
 

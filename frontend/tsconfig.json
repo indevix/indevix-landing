@@ -25,6 +25,12 @@
       "@config/*": ["./src/config/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/config/tags.tsч"
+  ],
   "exclude": ["node_modules"]
 }

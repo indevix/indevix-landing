@@ -6,6 +6,7 @@
   "Navigation": {
     "language": "Dil",
     "projects": "Portföy",
+    "all projects": "Tüm Projeler",
     "reviews": "Yorumlar",
     "services": "Hizmetler",
     "about": "Hakkımızda"
@@ -41,5 +42,49 @@
         "list": ["CRM", "Sistemler", "Yönetim Panelleri"]
       }
     }
+  },
+  "tags": {
+    "3 months": "3 ay",
+    "2 months": "2 ay",
+    "1 month": "1 ay",
+    "20 days": "20 gün",
+    "2 weeks": "2 hafta",
+    "1 week": "1 hafta",
+    "Copywriting": "Kopyalama",
+    "Design": "Tasarım",
+    "Development": "Geliştirme",
+    "Planning": "Planlama",
+    "Illustration": "İllüstrasyon"
+  },
+  "Reviews": {
+    "title": "Bize güveniyorlar",
+    "subtitle": "Yorumlar",
+    "view_all": "Tüm Yorumları Görüntüle",
+    "items": [
+      {
+        "id": "technonicol",
+        "logo": "/reviews/example.png",
+        "name": "Dovluru T.E.",
+        "position": "Pazarlama Müdürü",
+        "text": "Stüdyonun çalışanlarının her zaman iletişimde kalması, verdikleri sözler ve eylemler için sorumluluk alması ve zamanında ve düzenli bir şekilde çalışması önemlidir. Kısacası, kaybetmek istemeyeceğiniz güvenilir bir ortak. Başarılar dileriz ve uzun süreli ve olumlu bir işbirliği umuyoruz.",
+        "image": "/projects/example.png"
+      },
+      {
+        "id": "client2",
+        "logo": "/reviews/example.png",
+        "name": "Ekaterina L.",
+        "position": "Pazarlama Uzmanı",
+        "text": "Indevix ile bir yıldan fazla bir süredir çalışıyoruz. Bu süre zarfında, birkaç açılış sayfası, sunum ve hatta bir logo oluşturdular. Her zaman iletişim halindeler, her zaman yardımcı olmaya ve tavsiye vermeye hazırlar. Şablon çözümleri sunmakla kalmayıp, gerçekten görevi düşünmeleri ve bizim için en uygun seçenekleri sunmaları hoşuma gidiyor.",
+        "image": "/projects/example.png"
+      },
+      {
+        "id": "client3",
+        "name": "Alexey S.",
+        "logo": "/reviews/example.png",
+        "position": "Pazarlama Direktörü",
+        "text": "Indevix ile işbirliğimden çok memnunum. Bir açılış sayfasının geliştirilmesi ve bir sunumun tasarımı için sipariş verdim. Her şey hızlı, verimli bir şekilde ve tüm isteklerimi dikkate alarak yapıldı. Özellikle çocukların her zaman iletişimde kalması ve her türlü soruda yardımcı olmaya hazır olmaları hoşuma gitti. Tavsiye ediyorum!",
+        "image": "/projects/example.png"
+      }
+    ]
   }
 }

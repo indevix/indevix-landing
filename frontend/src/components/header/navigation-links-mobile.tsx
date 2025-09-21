@@ -16,7 +16,11 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
-export function NavigationLinksMobile() {
+interface NavigationProps {
+  landing?: boolean;
+}
+
+export function NavigationLinksMobile({ landing = true }: NavigationProps) {
   const t = useTranslations("Navigation");
   const locale = useLocale();
   const [isOpen, setIsOpen] = useState(false);
@@ -33,19 +37,26 @@ export function NavigationLinksMobile() {
         </Button>
       </SheetTrigger>
 
-      <SheetContent side="right" className="w-80 p-0">
+      <SheetContent
+        side="right"
+        className="w-80 p-0"
+        aria-describedby="mobile-menu-description"
+      >
         <SheetHeader>
           <SheetTitle>
             <SheetClose asChild className="focus:ring-0" />
           </SheetTitle>
         </SheetHeader>
+        <span id="mobile-menu-description" className="sr-only">
+          Indevix
+        </span>
 
         <div className="flex flex-col h-full">
           <nav className="flex-1">
             {links.map((link) => (
               <SheetClose asChild key={link.href}>
                 <Link
-                  href={link.href}
+                  href={landing ? link.href : `/${locale}${link.href}`}
                   className="block text-base md:text-xl font-medium text-foreground hover:text-primary hover:bg-accent transition-colors p-2"
                 >
                   {t(`${link.name}`)}
