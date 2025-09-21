@@ -1,4 +1,4 @@
-import { PageParams } from "@types/page-params.types";
+import { PageParams } from "@/types/page-params.types";
 import { Header } from "@components/header/header";
 import Hero from "@components/hero/hero";
 import Projects from "@components/projects/projects";
