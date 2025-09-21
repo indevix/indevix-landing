@@ -1,18 +1,18 @@
 "use client";
 
-import { IService } from "@config/services-data";
 import { ProjectTags } from "@components/tags";
 import { Button } from "@ui/button";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
 import { useState } from "react";
 import { ServiceModal } from "./service-modal";
+import { Service } from "@types/service.types";
 
 export function ServiceCard({
   service,
   key,
 }: {
-  service: IService;
+  service: Service;
   key: string;
 }) {
   const t = useTranslations("Shared");

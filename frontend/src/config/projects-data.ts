@@ -1,11 +1,6 @@
-export interface IProject {
-  title: string;
-  kind: string;
-  tags: string[];
-  url: string;
-}
+import { Project } from "@types/project.types";
 
-export const projectsData: IProject[] = [
+export const projectsData: Project[] = [
   {
     title: "Project One",
     kind: "Landing Page",

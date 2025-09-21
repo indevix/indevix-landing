@@ -1,10 +1,10 @@
-import { IService } from "@config/services-data";
 import { useTranslations } from "next-intl";
 import { ServiceCard } from "./service-card";
+import { Service } from "@types/service.types";
 
 export default function Services() {
   const t = useTranslations("Services");
-  const items = t.raw("items") as IService[];
+  const items = t.raw("items") as Service[];
 
   return (
     <article

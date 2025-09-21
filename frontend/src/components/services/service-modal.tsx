@@ -1,6 +1,5 @@
 "use client";
 
-import { IService } from "@config/services-data";
 import { ProjectTags } from "@components/tags";
 import { Button } from "@ui/button";
 import { useTranslations } from "next-intl";
@@ -8,9 +7,10 @@ import { motion, AnimatePresence } from "motion/react";
 import { createPortal } from "react-dom";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
+import { Service } from "@types/service.types";
 
 interface ServiceModalProps {
-  service: IService | null;
+  service: Service | null;
   isOpen: boolean;
   onClose: () => void;
 }
@@ -75,7 +75,6 @@ export function ServiceModal({ service, isOpen, onClose }: ServiceModalProps) {
           exit="hidden"
           transition={{ duration: 0.3 }}
         >
-          {/* Backdrop */}
           <motion.div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={onClose}
@@ -84,7 +83,6 @@ export function ServiceModal({ service, isOpen, onClose }: ServiceModalProps) {
             exit={{ opacity: 0 }}
           />
 
-          {/* Modal Content */}
           <motion.div
             className="relative bg-card border border-border rounded-3xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden scrollbar-hide"
             variants={modalVariants}
@@ -98,7 +96,6 @@ export function ServiceModal({ service, isOpen, onClose }: ServiceModalProps) {
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close Button */}
             <motion.button
               className="absolute top-6 right-6 p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors duration-200"
               onClick={onClose}
@@ -107,7 +104,7 @@ export function ServiceModal({ service, isOpen, onClose }: ServiceModalProps) {
             >
               <X size={20} className="text-muted-foreground" />
             </motion.button>
-            {/* Header */}
+
             <motion.div
               className="mb-8"
               initial={{ opacity: 0, y: 20 }}
@@ -126,7 +123,7 @@ export function ServiceModal({ service, isOpen, onClose }: ServiceModalProps) {
                 <ProjectTags tags={service.tags} />
               </motion.div>
             </motion.div>
-            {/* Description */}
+
             <motion.div
               className="mb-8"
               initial={{ opacity: 0, y: 20 }}

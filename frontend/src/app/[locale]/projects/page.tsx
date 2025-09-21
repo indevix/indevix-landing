@@ -8,12 +8,9 @@ import { Contacts } from "@components/header/contacts";
 import Projects from "@components/projects/projects";
 import { navigationLinks as links } from "@config/navigation-links";
 import LocaleSwitcherSelect from "@components/header/locale-switcher-select";
+import { PageParams } from "@types/page-params.types";
 
-export interface PageProps {
-  params: Promise<{ locale: string }>;
-}
-
-export default function ProjectsPage({ params }: PageProps) {
+export default function ProjectsPage({ params }: PageParams) {
   const { locale } = use(params);
 
   setRequestLocale(locale as Locale);

@@ -5,12 +5,12 @@ import { Button } from "@ui/button";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
-interface IProjectsProps {
+interface ProjectsProps {
   limit?: number;
   all?: boolean;
 }
 
-export default function Projects({ limit, all = false }: IProjectsProps) {
+export default function Projects({ limit, all = false }: ProjectsProps) {
   const t = useTranslations("Navigation");
 
   return (

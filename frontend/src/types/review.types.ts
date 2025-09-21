@@ -1,4 +1,4 @@
-export interface iReview {
+export interface Review {
   id: string;
   logo: string;
   name: string;
