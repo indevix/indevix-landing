@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
 import { useState } from "react";
 import { ServiceModal } from "./service-modal";
-import { Service } from "@types/service.types";
+import type { Service } from "@/types/service.types";
 
 export function ServiceCard({
   service,

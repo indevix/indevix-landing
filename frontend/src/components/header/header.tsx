@@ -1,7 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { NavigationLinks } from "./navigation-links";
 import { Contacts } from "./contacts";
-import Link from "next/link";
 import { NavigationLinksMobile } from "./navigation-links-mobile";
 
 export function Header({ locale }: { locale: string }) {

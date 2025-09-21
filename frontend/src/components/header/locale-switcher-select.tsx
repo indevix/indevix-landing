@@ -8,10 +8,10 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Globe } from "lucide-react";
+} from "@components/ui/select";
 import { useLocale, Locale } from "next-intl";
 import { routing } from "@/i18n/routing";
+import { Globe } from "lucide-react";
 
 type Props = {
   label: string;

@@ -1,11 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { useTranslations, useLocale } from "next-intl";
-import { navigationLinks as links } from "@config/navigation-links";
-import Link from "next/link";
-import LocaleSwitcherSelect from "./locale-switcher-select";
-import { Button } from "../ui/button";
 import {
   Sheet,
   SheetContent,
@@ -14,6 +8,12 @@ import {
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
+import { Button } from "@ui/button";
+import { useState } from "react";
+import { useTranslations, useLocale } from "next-intl";
+import { navigationLinks as links } from "@config/navigation-links";
+import Link from "next/link";
+import LocaleSwitcherSelect from "./locale-switcher-select";
 import { Menu } from "lucide-react";
 
 interface NavigationProps {

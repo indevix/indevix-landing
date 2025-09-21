@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { navigationLinks as links } from "@config/navigation-links";
-import Link from "next/link";
 import LocaleSwitcherSelect from "./locale-switcher-select";
 
 export function NavigationLinks() {

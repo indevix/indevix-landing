@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { ServiceCard } from "./service-card";
-import { Service } from "@types/service.types";
+import type { Service } from "@/types/service.types";
 
 export default function Services() {
   const t = useTranslations("Services");

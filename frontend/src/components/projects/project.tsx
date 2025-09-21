@@ -1,8 +1,8 @@
-import { IProject } from "@config/projects-data";
 import { ProjectImage } from "./project-image";
 import { ProjectCard } from "./project-card";
+import type { Project } from "@/types/project.types";
 
-export function Project({ data }: { data: IProject }) {
+export function Project({ data }: { data: Project }) {
   return (
     <div className="rounded-[40px] max-w-[440px]">
       <ProjectImage

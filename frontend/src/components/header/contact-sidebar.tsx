@@ -1,9 +1,9 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { X } from "lucide-react";
 import { Button } from "@ui/button";
 import { contactsMeta } from "@config/contacts-meta";
+import { X } from "lucide-react";
 import { createPortal } from "react-dom";
 
 interface ContactSidebarProps {

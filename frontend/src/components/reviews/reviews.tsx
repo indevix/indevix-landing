@@ -8,7 +8,7 @@ import {
 import { Button } from "@ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import { Review } from "@types/review.types";
+import type { Review } from "@/types/review.types";
 import { ProjectImageModal } from "@components/projects/project-image-modal";
 
 export default function Reviews() {

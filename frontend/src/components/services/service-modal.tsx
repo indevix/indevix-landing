@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { createPortal } from "react-dom";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
-import { Service } from "@types/service.types";
+import type { Service } from "@/types/service.types";
 
 interface ServiceModalProps {
   service: Service | null;

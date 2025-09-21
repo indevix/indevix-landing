@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { projectsData } from "@/config/projects-data";
+import { projectsData } from "@config/projects-data";
 import { Project } from "./project";
 import { Button } from "@ui/button";
 import Link from "next/link";

@@ -22,8 +22,7 @@
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@ui/*": ["./src/components/ui/*"],
-      "@config/*": ["./src/config/*"],
-      "@types/*": ["./src/types/*"]
+      "@config/*": ["./src/config/*"]
     }
   },
   "include": [

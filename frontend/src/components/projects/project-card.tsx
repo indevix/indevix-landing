@@ -1,4 +1,4 @@
-import { ProjectTags } from "../tags";
+import { ProjectTags } from "@components/tags";
 
 interface ProjectCardProps {
   kind: string;
