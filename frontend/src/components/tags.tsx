@@ -1,18 +1,45 @@
 import type { LucideIcon } from "lucide-react";
 import {
-  Calendar,
-  Clock,
-  Timer,
   Type,
   Palette,
   Code,
   ListTodo,
   Brush,
-  Tag as TagIcon,
   SearchCode,
+  Monitor,
+  Globe,
+  Users,
+  TrendingUp,
+  BadgeCheck,
+  Workflow,
+  Gauge,
+  PiggyBank,
+  Contact,
+  Settings,
+  PlugZap,
+  Cable,
+  Expand,
+  KeyRound,
+  LifeBuoy,
+  Wrench,
+  ShieldCheck,
+  Clock,
+  Shield,
+  BarChart3,
+  Database,
+  FileBarChart,
+  Lightbulb,
+  Target,
+  PanelsTopLeft,
+  LayoutTemplate,
+  Pointer,
+  ThumbsUp,
+  Calendar,
+  Timer,
+  TagIcon,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Badge } from "./ui/badge";
+import { Badge } from "@ui/badge";
 
 const STATIC_ICON_MAP: Record<string, LucideIcon> = {
   copywriting: Type,
@@ -20,11 +47,57 @@ const STATIC_ICON_MAP: Record<string, LucideIcon> = {
   development: Code,
   planning: ListTodo,
   illustration: Brush,
-  "Pre-project analysis": SearchCode,
+  "pre-project analysis": SearchCode,
+
+  website: Monitor,
+  "online presence": Globe,
+  clients: Users,
+  sales: TrendingUp,
+  brand: BadgeCheck,
+  branding: BadgeCheck,
+
+  automation: Workflow,
+  processes: Settings,
+  efficiency: Gauge,
+  savings: PiggyBank,
+  crm: Contact,
+
+  integration: PlugZap,
+  api: Cable,
+  scaling: Expand,
+  turnkey: KeyRound,
+
+  support: LifeBuoy,
+  maintenance: Wrench,
+  reliability: ShieldCheck,
+  "24/7": Clock,
+  security: Shield,
+
+  analytics: BarChart3,
+  data: Database,
+  reports: FileBarChart,
+  insights: Lightbulb,
+  strategy: Target,
+
+  interfaces: PanelsTopLeft,
+  ui: LayoutTemplate,
+  ux: Pointer,
+  usability: ThumbsUp,
+
+  "3 months": Calendar,
+  "2 months": Calendar,
+  "1 month": Calendar,
+  "2 weeks": Clock,
+  "1 week": Clock,
+  "20 days": Timer,
 };
 
+function normalizeTag(name: string) {
+  return name.trim().toLowerCase().replace(/\s+/g, " ").replace(/–|—/g, "-");
+}
+
 function getIconForTag(name: string): LucideIcon {
-  const key = name.trim().toLowerCase();
+  const key = normalizeTag(name);
 
   if (key.includes("month")) return Calendar;
   if (key.includes("week")) return Clock;
@@ -48,9 +121,9 @@ export function ProjectTags({ tags }: ProjectTagsProps) {
           <Badge
             variant="outline"
             key={tag}
-            className="flex items-center text-[15px] font-extralight md:text-[17px] gap-[10px] rounded-[100px] bg-[#1D1D1D] border-0"
+            className="flex items-center gap-[10px] rounded-[100px] bg-[#1D1D1D] border-0 text-[15px] font-extralight md:text-[17px]"
           >
-            {Icon && <Icon className="w-4 h-4" />}
+            <Icon className="w-4 h-4" aria-hidden />
             {t(tag)}
           </Badge>
         );

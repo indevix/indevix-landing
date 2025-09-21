@@ -8,12 +8,12 @@ import {
 import { Button } from "@ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import { ReviewItem } from "@/types/reviews";
+import { iReview } from "@/types/review";
 import { ProjectImageModal } from "@components/projects/project-image-modal";
 
 export default function Reviews() {
   const t = useTranslations("Reviews");
-  const items = t.raw("items") as ReviewItem[];
+  const items = t.raw("items") as iReview[];
 
   return (
     <article

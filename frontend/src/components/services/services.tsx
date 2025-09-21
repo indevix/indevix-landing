@@ -1,7 +1,6 @@
 import { IService } from "@config/services-data";
 import { useTranslations } from "next-intl";
-import { Button } from "@ui/button";
-import { ProjectTags } from "../tags";
+import { ServiceCard } from "./service-card";
 
 export default function Services() {
   const t = useTranslations("Services");
@@ -23,33 +22,7 @@ export default function Services() {
 
       <section className="flex flex-wrap justify-center gap-5">
         {items.map((service) => (
-          <div
-            key={service.id}
-            className="flex flex-col justify-between w-[440px] h-[490px] bg-card border border-border p-5 rounded-[30px]"
-          >
-            <div className="flex flex-col gap-10">
-              <h3 className="font-semibold text-foreground text-xl md:text-2xl">
-                {service.title}
-              </h3>
-              <div>
-                <ProjectTags tags={service.tags} />
-              </div>
-            </div>
-
-            <div>
-              <div className="flex gap-[5px] text-foreground items-baseline">
-                <span className="text-xs md:text-sm font-extralight">
-                  {t("from")}
-                </span>
-                <span className="text-xl md:text-2xl font-semibold">
-                  {service.price}
-                </span>
-              </div>
-              <Button className="w-full mt-5 py-5 px-[30px]">
-                {t("more")}
-              </Button>
-            </div>
-          </div>
+          <ServiceCard key={service.id} service={service} />
         ))}
       </section>
     </article>

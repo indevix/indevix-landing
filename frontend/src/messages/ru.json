@@ -3,6 +3,12 @@
     "description": "Описание"
   },
 
+  "Shared": {
+    "from": "от",
+    "more": "Подробнее",
+    "description": "Описание"
+  },
+
   "Navigation": {
     "language": "Язык",
     "projects": "Портфолио",
@@ -28,6 +34,56 @@
     }
   },
 
+  "tags": {
+    "3 months": "3 месяца",
+    "2 months": "2 месяца",
+    "1 month": "1 месяц",
+    "20 days": "20 дней",
+    "2 weeks": "2 недели",
+    "1 week": "1 неделя",
+
+    "Copywriting": "Копирайтинг",
+    "Design": "Дизайн",
+    "Development": "Разработка",
+    "Planning": "Проектирование",
+    "Illustration": "Иллюстрация",
+    "Pre-project analysis": "Предпроектная аналитика",
+
+    "Website": "Сайт",
+    "Online presence": "Онлайн-присутствие",
+    "Clients": "Клиенты",
+    "Sales": "Продажи",
+    "Brand": "Бренд",
+
+    "Automation": "Автоматизация",
+    "Processes": "Процессы",
+    "Efficiency": "Эффективность",
+    "Savings": "Экономия",
+    "CRM": "CRM",
+
+    "Integration": "Интеграция",
+    "Scaling": "Масштабирование",
+    "Turnkey": "Под ключ",
+    "API": "API",
+
+    "Support": "Поддержка",
+    "Maintenance": "Обслуживание",
+    "Reliability": "Надёжность",
+    "24/7": "24/7",
+    "Security": "Безопасность",
+
+    "Analytics": "Аналитика",
+    "Data": "Данные",
+    "Reports": "Отчёты",
+    "Insights": "Инсайты",
+    "Strategy": "Стратегия",
+
+    "Interfaces": "Интерфейсы",
+    "UX": "UX",
+    "UI": "UI",
+    "Usability": "Удобство"
+  },
+
   "Hero": {
     "title_1": "Проектирование. Дизайн.",
     "title_2": "Разработка.",
@@ -47,28 +103,14 @@
     }
   },
 
-  "tags": {
-    "3 months": "3 месяца",
-    "2 months": "2 месяца",
-    "1 month": "1 месяц",
-    "20 days": "20 дней",
-    "2 weeks": "2 недели",
-    "1 week": "1 неделя",
-    "Copywriting": "Копирайтинг",
-    "Design": "Дизайн",
-    "Development": "Разработка",
-    "Planning": "Проектирование",
-    "Illustration": "Иллюстрация",
-    "Pre-project analysis": "Предпроектная аналитика"
-  },
-
   "Reviews": {
     "title": "Нам доверяют",
     "subtitle": "Отзывы",
     "view_all": "Посмотреть весь сайт",
     "items": [
       {
-        "id": "technonicol",
+        "id": "1",
+        "company": "technonicol",
         "logo": "/reviews/example.png",
         "name": "Довлуру Т.Э.",
         "position": "Руководитель службы маркетинга",
@@ -76,7 +118,8 @@
         "image": "/projects/example.png"
       },
       {
-        "id": "client2",
+        "id": "2",
+        "company": "client2",
         "logo": "/reviews/example.png",
         "name": "Екатерина Л.",
         "position": "Специалист по маркетингу",
@@ -84,7 +127,8 @@
         "image": "/projects/example.png"
       },
       {
-        "id": "client3",
+        "id": "3",
+        "company": "client3",
         "logo": "/reviews/example.png",
         "name": "Алексей С.",
         "position": "Директор по маркетингу",
@@ -97,74 +141,50 @@
   "Services": {
     "title": "Услуги",
     "subtitle": "Стоимость",
-    "from": "от",
-    "more": "Подробнее",
+    "order_service": "Заказать услугу",
+    "description": "Итоговая стоимость зависит от сложности и объёма работ",
     "items": [
       {
         "id": "1",
-        "title": "Корпоративный сайт",
-        "description": "Создание современного и функционального корпоративного сайта, который эффективно представит вашу компанию в интернете.",
-        "price": "6000$",
-        "tags": [
-          "Planning",
-          "Design",
-          "Development",
-          "Copywriting",
-          "Pre-project analysis"
-        ]
+        "title": "Разработка веб-сайтов",
+        "description": "Создаём современные сайты, которые привлекают новых клиентов и повышают доверие к вашему бренду. Ваш бизнес получает эффективный онлайн-инструмент для роста продаж.",
+        "price": "$1,000",
+        "tags": ["Website", "Online presence", "Clients", "Sales", "Brand"]
       },
       {
         "id": "2",
-        "title": "Landing Page",
-        "description": "Создание целевой страницы, которая эффективно представит ваш продукт и увеличит конверсию.",
-        "price": "1000$",
-        "tags": ["Planning", "Design", "Illustration", "Pre-project analysis"]
+        "title": "Автоматизация бизнес-процессов",
+        "description": "Автоматизация избавляет вашу команду от рутинных задач и ошибок. Мы внедряем цифровые решения, которые повышают эффективность работы и сокращают издержки.",
+        "price": "$2,500",
+        "tags": ["Automation", "Processes", "Efficiency", "Savings", "CRM"]
       },
       {
         "id": "3",
-        "title": "Брендинг",
-        "description": "Создание уникального бренда, который выделит вас на рынке и привлечет вашу целевую аудиторию.",
-        "price": "2000$",
-        "tags": [
-          "Planning",
-          "Design",
-          "Illustration",
-          "Copywriting",
-          "Pre-project analysis"
-        ]
+        "title": "Индивидуальная разработка ПО",
+        "description": "Создаём программные решения под задачи вашего бизнеса. Индивидуальное ПО учитывает особенности вашей работы, помогает вашему бизнесу масштабироваться и даёт конкурентное преимущество.",
+        "price": "$10,000",
+        "tags": ["Development", "Integration", "Scaling", "Turnkey", "API"]
       },
       {
         "id": "4",
-        "title": "Дизайн презентаций",
-        "description": "Разработка профессиональных презентаций, которые эффективно донесут вашу идею до аудитории.",
-        "price": "500$",
-        "tags": ["Design", "Illustration", "Copywriting"]
+        "title": "IT-поддержка и обслуживание",
+        "description": "Мы обеспечиваем надёжную работу ваших систем и оперативно решаем технические проблемы. Профессиональная поддержка 24/7 защищает ваш бизнес от простоев и сбоев.",
+        "price": "$500",
+        "tags": ["Support", "Maintenance", "Reliability", "24/7", "Security"]
       },
       {
         "id": "5",
-        "title": "IT-решения",
-        "description": "Создание целевых страниц, которые помогут увеличить конверсию и привлечь новых клиентов.",
-        "price": "800$",
-        "tags": [
-          "Planning",
-          "Design",
-          "Development",
-          "Copywriting",
-          "Pre-project analysis"
-        ]
+        "title": "Аналитика данных",
+        "description": "Мы превращаем бизнес-данные в понятные инсайты. Аналитика показывает новые возможности для роста и помогает принимать обоснованные решения.",
+        "price": "$1,500",
+        "tags": ["Analytics", "Data", "Reports", "Insights", "Strategy"]
       },
       {
         "id": "6",
-        "title": "Редизайн сайта",
-        "description": "Обновление и улучшение существующего сайта для повышения его эффективности и привлекательности.",
-        "price": "3000$",
-        "tags": [
-          "Planning",
-          "Design",
-          "Development",
-          "Copywriting",
-          "Pre-project analysis"
-        ]
+        "title": "Дизайн интерфейсов",
+        "description": "Создаём удобные и привлекательные интерфейсы для ваших приложений и сайтов. Продуманный дизайн улучшает впечатление клиентов и укрепляет доверие к вашему бренду.",
+        "price": "$800",
+        "tags": ["Design", "Interfaces", "UX", "UI", "Usability"]
       }
     ]
   }

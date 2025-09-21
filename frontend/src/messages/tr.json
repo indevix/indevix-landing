@@ -1,48 +1,39 @@
 {
   "LocaleLayout": {
-    "title": "Başlık",
     "description": "Açıklama"
   },
+
+  "Shared": {
+    "from": "kimden",
+    "more": "Daha fazla",
+    "description": "Açıklama"
+  },
+
   "Navigation": {
     "language": "Dil",
     "projects": "Portföy",
-    "all projects": "Tüm Projeler",
+    "all projects": "Tüm projeleri görüntüle",
     "reviews": "Yorumlar",
     "services": "Hizmetler",
-    "about": "Hakkımızda"
+    "about": "Hakkımızda",
+    "mobileMenuDescription": "Site gezinmesi"
   },
+
   "ContactSidebar": {
     "title": "İletişim",
     "phone": {
       "label": "Telefon"
     },
     "whatsapp": {
-      "title": "Bizim WhatsApp",
+      "title": "WhatsApp üzerinden yaz",
       "label": "WhatsApp"
     },
     "telegram": {
-      "title": "Bizim Telegram",
+      "title": "Telegram üzerinden yaz",
       "label": "Telegram"
     }
   },
-  "Hero": {
-    "title_1": "Planlama. Tasarım.",
-    "title_2": "Geliştirme.",
-    "direction": {
-      "web": {
-        "title": "Web Siteleri",
-        "list": ["Landing Sayfaları", "Kurumsal Siteler", "Özel Projeler"]
-      },
-      "design": {
-        "title": "Tasarım",
-        "list": ["Sunumlar", "UX/UI Tasarım", "Markalaşma"]
-      },
-      "automation": {
-        "title": "Otomasyon",
-        "list": ["CRM", "Sistemler", "Yönetim Panelleri"]
-      }
-    }
-  },
+
   "tags": {
     "3 months": "3 ay",
     "2 months": "2 ay",
@@ -50,40 +41,150 @@
     "20 days": "20 gün",
     "2 weeks": "2 hafta",
     "1 week": "1 hafta",
-    "Copywriting": "Kopyalama",
+
+    "Copywriting": "Metin yazarlığı",
     "Design": "Tasarım",
     "Development": "Geliştirme",
     "Planning": "Planlama",
-    "Illustration": "İllüstrasyon"
+    "Illustration": "İllüstrasyon",
+    "Pre-project analysis": "Ön proje analizi",
+
+    "Website": "Web sitesi",
+    "Online presence": "Çevrimiçi varlık",
+    "Clients": "Müşteriler",
+    "Sales": "Satışlar",
+    "Brand": "Marka",
+
+    "Automation": "Otomasyon",
+    "Processes": "Süreçler",
+    "Efficiency": "Verimlilik",
+    "Savings": "Tasarruf",
+    "CRM": "CRM",
+
+    "Integration": "Entegrasyon",
+    "Scaling": "Ölçeklendirme",
+    "Turnkey": "Anahtar teslim",
+    "API": "API",
+
+    "Support": "Destek",
+    "Maintenance": "Bakım",
+    "Reliability": "Güvenilirlik",
+    "24/7": "24/7",
+    "Security": "Güvenlik",
+
+    "Analytics": "Analitik",
+    "Data": "Veri",
+    "Reports": "Raporlar",
+    "Insights": "Öngörüler",
+    "Strategy": "Strateji",
+
+    "Interfaces": "Arayüzler",
+    "UX": "UX",
+    "UI": "UI",
+    "Usability": "Kullanılabilirlik"
   },
+
+  "Hero": {
+    "title_1": "Planlama. Tasarım.",
+    "title_2": "Geliştirme.",
+    "direction": {
+      "web": {
+        "title": "Web siteleri",
+        "list": ["Landing sayfaları", "Kurumsal siteler", "Özel projeler"]
+      },
+      "design": {
+        "title": "Tasarım",
+        "list": ["Sunumlar", "UX/UI tasarım", "Markalaşma"]
+      },
+      "automation": {
+        "title": "Otomasyon",
+        "list": ["CRM", "Sistemler", "Yönetim panelleri"]
+      }
+    }
+  },
+
   "Reviews": {
     "title": "Bize güveniyorlar",
     "subtitle": "Yorumlar",
-    "view_all": "Tüm Yorumları Görüntüle",
+    "view_all": "Tüm siteyi görüntüle",
     "items": [
       {
-        "id": "technonicol",
+        "id": "1",
+        "company": "technonicol",
         "logo": "/reviews/example.png",
         "name": "Dovluru T.E.",
-        "position": "Pazarlama Müdürü",
-        "text": "Stüdyonun çalışanlarının her zaman iletişimde kalması, verdikleri sözler ve eylemler için sorumluluk alması ve zamanında ve düzenli bir şekilde çalışması önemlidir. Kısacası, kaybetmek istemeyeceğiniz güvenilir bir ortak. Başarılar dileriz ve uzun süreli ve olumlu bir işbirliği umuyoruz.",
+        "position": "Pazarlama Bölümü Müdürü",
+        "text": "Stüdyo ekibinin her zaman ulaşılabilir olması, verdiği sözlerin ve eylemlerin sorumluluğunu alması, hızlı ve düzenli çalışması bizim için önemli. Kısacası, kaybetmek istemeyeceğiniz güvenilir bir ortak. Başarılı projeler diliyoruz ve uzun vadeli iş birliğini umuyoruz.",
         "image": "/projects/example.png"
       },
       {
-        "id": "client2",
+        "id": "2",
+        "company": "client2",
         "logo": "/reviews/example.png",
         "name": "Ekaterina L.",
         "position": "Pazarlama Uzmanı",
-        "text": "Indevix ile bir yıldan fazla bir süredir çalışıyoruz. Bu süre zarfında, birkaç açılış sayfası, sunum ve hatta bir logo oluşturdular. Her zaman iletişim halindeler, her zaman yardımcı olmaya ve tavsiye vermeye hazırlar. Şablon çözümleri sunmakla kalmayıp, gerçekten görevi düşünmeleri ve bizim için en uygun seçenekleri sunmaları hoşuma gidiyor.",
+        "text": "Indevix ile bir yıldan uzun süredir çalışıyoruz. Bu sürede birkaç landing sayfası, sunum ve hatta bir logo hazırladılar. Her zaman ulaşılabilirler, yardımcı olmaya ve yönlendirmeye hazırlar. Şablon çözümler sunmak yerine gerçekten düşünerek bize en uygun seçenekleri öneriyorlar.",
         "image": "/projects/example.png"
       },
       {
-        "id": "client3",
-        "name": "Alexey S.",
+        "id": "3",
+        "company": "client3",
         "logo": "/reviews/example.png",
+        "name": "Aleksey S.",
         "position": "Pazarlama Direktörü",
-        "text": "Indevix ile işbirliğimden çok memnunum. Bir açılış sayfasının geliştirilmesi ve bir sunumun tasarımı için sipariş verdim. Her şey hızlı, verimli bir şekilde ve tüm isteklerimi dikkate alarak yapıldı. Özellikle çocukların her zaman iletişimde kalması ve her türlü soruda yardımcı olmaya hazır olmaları hoşuma gitti. Tavsiye ediyorum!",
+        "text": "Indevix ile iş birliğimizden çok memnunuz. Landing ve sunum tasarımı sipariş ettik. Her şey hızlı ve kaliteli şekilde, tüm taleplerimiz dikkate alınarak yapıldı. Ekip her zaman ulaşılabilir ve her konuda yardımcı olmaya hazır. Tavsiye ederim!",
         "image": "/projects/example.png"
+      }
+    ]
+  },
+
+  "Services": {
+    "title": "Hizmetler",
+    "subtitle": "Fiyatlandırma",
+    "order_service": "Hizmet siparişi",
+    "description": "İtibariyle, toplam maliyet işin karmaşıklığına ve kapsamına bağlıdır",
+    "items": [
+      {
+        "id": "1",
+        "title": "Web sitesi geliştirme",
+        "description": "Yeni müşteriler çeken ve markanıza güveni artıran modern web siteleri geliştiriyoruz. İşletmeniz satış büyümesi için etkili bir çevrimiçi araca sahip olur.",
+        "price": "$1,000",
+        "tags": ["Website", "Online presence", "Clients", "Sales", "Brand"]
+      },
+      {
+        "id": "2",
+        "title": "İş süreçlerinin otomasyonu",
+        "description": "Otomasyon ekibinizi rutin işlerden ve hatalardan kurtarır. Verimliliği artıran ve maliyetleri azaltan dijital çözümler uygularız.",
+        "price": "$2,500",
+        "tags": ["Automation", "Processes", "Efficiency", "Savings", "CRM"]
+      },
+      {
+        "id": "3",
+        "title": "Özel yazılım geliştirme",
+        "description": "İş ihtiyaçlarınıza uygun yazılım çözümleri üretiyoruz. Özel yazılım süreçlerinize uyum sağlar, ölçeklenmenize yardımcı olur ve rekabet avantajı sunar.",
+        "price": "$10,000",
+        "tags": ["Development", "Integration", "Scaling", "Turnkey", "API"]
+      },
+      {
+        "id": "4",
+        "title": "IT destek ve bakım",
+        "description": "Sistemlerinizin güvenilir çalışmasını sağlarız ve teknik sorunları hızla çözeriz. Profesyonel 7/24 destek, işinizin duraksamasını önler.",
+        "price": "$500",
+        "tags": ["Support", "Maintenance", "Reliability", "24/7", "Security"]
+      },
+      {
+        "id": "5",
+        "title": "Veri analitiği",
+        "description": "İş verilerini anlaşılır içgörülere dönüştürüyoruz. Analitik, büyüme fırsatlarını gösterir ve bilinçli kararlar almanızı sağlar.",
+        "price": "$1,500",
+        "tags": ["Analytics", "Data", "Reports", "Insights", "Strategy"]
+      },
+      {
+        "id": "6",
+        "title": "Arayüz tasarımı",
+        "description": "Uygulamalarınız ve web siteleriniz için kullanışlı ve çekici arayüzler tasarlarız. Düşünülmüş tasarım, müşteri deneyimini ve güveni artırır.",
+        "price": "$800",
+        "tags": ["Design", "Interfaces", "UX", "UI", "Usability"]
       }
     ]
   }

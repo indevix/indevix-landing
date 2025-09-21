@@ -1,49 +1,39 @@
 {
   "LocaleLayout": {
-    "title": "Title",
     "description": "Description"
   },
+
+  "Shared": {
+    "from": "from",
+    "more": "Learn more",
+    "description": "Description"
+  },
+
   "Navigation": {
     "language": "Language",
-    "projects": "Projects",
-    "all projects": "View All Projects",
+    "projects": "Portfolio",
+    "all projects": "View all projects",
     "reviews": "Reviews",
     "services": "Services",
-    "about": "About",
-    "mobileMenuDescription": "Site navigation menu"
+    "about": "About us",
+    "mobileMenuDescription": "Site navigation"
   },
+
   "ContactSidebar": {
     "title": "Contacts",
     "phone": {
       "label": "Phone"
     },
     "whatsapp": {
-      "title": "Write on WhatsApp",
+      "title": "Message on WhatsApp",
       "label": "WhatsApp"
     },
     "telegram": {
-      "title": "Write on Telegram",
+      "title": "Message on Telegram",
       "label": "Telegram"
     }
   },
-  "Hero": {
-    "title_1": "Planning. Design.",
-    "title_2": "Development.",
-    "direction": {
-      "web": {
-        "title": "Web",
-        "list": ["Landing Pages", "Corporate Websites", "Special Projects"]
-      },
-      "design": {
-        "title": "Design",
-        "list": ["Presentations", "UX/UI Design", "Branding"]
-      },
-      "automation": {
-        "title": "Automation",
-        "list": ["CRM", "Systems", "Admin Panels"]
-      }
-    }
-  },
+
   "tags": {
     "3 months": "3 months",
     "2 months": "2 months",
@@ -51,39 +41,98 @@
     "20 days": "20 days",
     "2 weeks": "2 weeks",
     "1 week": "1 week",
+
     "Copywriting": "Copywriting",
     "Design": "Design",
     "Development": "Development",
     "Planning": "Planning",
-    "Illustration": "Illustration"
+    "Illustration": "Illustration",
+    "Pre-project analysis": "Pre-project analysis",
+
+    "Website": "Website",
+    "Online presence": "Online presence",
+    "Clients": "Clients",
+    "Sales": "Sales",
+    "Brand": "Brand",
+
+    "Automation": "Automation",
+    "Processes": "Processes",
+    "Efficiency": "Efficiency",
+    "Savings": "Savings",
+    "CRM": "CRM",
+
+    "Integration": "Integration",
+    "Scaling": "Scaling",
+    "Turnkey": "Turnkey",
+    "API": "API",
+
+    "Support": "Support",
+    "Maintenance": "Maintenance",
+    "Reliability": "Reliability",
+    "24/7": "24/7",
+    "Security": "Security",
+
+    "Analytics": "Analytics",
+    "Data": "Data",
+    "Reports": "Reports",
+    "Insights": "Insights",
+    "Strategy": "Strategy",
+
+    "Interfaces": "Interfaces",
+    "UX": "UX",
+    "UI": "UI",
+    "Usability": "Usability"
   },
+
+  "Hero": {
+    "title_1": "Planning. Design.",
+    "title_2": "Development.",
+    "direction": {
+      "web": {
+        "title": "Websites",
+        "list": ["Landing pages", "Corporate websites", "Special projects"]
+      },
+      "design": {
+        "title": "Design",
+        "list": ["Presentations", "UX/UI design", "Branding"]
+      },
+      "automation": {
+        "title": "Automation",
+        "list": ["CRM", "Systems", "Admin panels"]
+      }
+    }
+  },
+
   "Reviews": {
     "title": "Trusted by",
     "subtitle": "Reviews",
-    "view_all": "View All Reviews",
+    "view_all": "View full site",
     "items": [
       {
-        "id": "technonicol",
+        "id": "1",
+        "company": "technonicol",
         "logo": "/reviews/example.png",
         "name": "Dovluru T.E.",
-        "position": "Head of Marketing",
-        "text": "It is important that the studio staff are always in touch, take responsibility for their promises and actions, and work promptly and in an organized manner. In a word, a reliable partner that you don't want to lose. We wish you successful projects and hope for a long and positive collaboration.",
+        "position": "Head of Marketing Department",
+        "text": "It is important that the studio’s team is always in touch, takes responsibility for their promises and actions, and works quickly and in an organized manner. In a word—a reliable partner you don’t want to lose. We wish you successful projects and look forward to long-term positive cooperation.",
         "image": "/projects/example.png"
       },
       {
-        "id": "client2",
+        "id": "2",
+        "company": "client2",
         "logo": "/reviews/example.png",
         "name": "Ekaterina L.",
         "position": "Marketing Specialist",
-        "text": "We have been working with Indevix for over a year now. During this time, they have managed to create several landing pages, presentations, and even a logo for us. They are always in touch, always ready to help and advise. I really like that they offer not just template solutions, but really think about the task and offer options that are most suitable for us.",
+        "text": "We have been working with Indevix for over a year. During this time, they created several landing pages, presentations, and even a logo for us. Always in touch, always ready to help and advise. I like that they don’t offer template solutions—they really think through the task and propose options that fit us best.",
         "image": "/projects/example.png"
       },
       {
-        "id": "client3",
-        "name": "Alexey S.",
+        "id": "3",
+        "company": "client3",
         "logo": "/reviews/example.png",
-        "position": "Director of Marketing",
-        "text": "I am very satisfied with my collaboration with Indevix. I ordered the development of a landing page and the design of a presentation. Everything was done quickly, efficiently, and taking into account all my wishes. I especially liked that the guys are always in touch and ready to help with any questions. I recommend!",
+        "name": "Aleksey S.",
+        "position": "Marketing Director",
+        "text": "Very satisfied with our cooperation with Indevix. We ordered a landing page and presentation design. Everything was done quickly, with high quality, and with all requirements considered. The team is always available and ready to help with any questions. Recommended!",
         "image": "/projects/example.png"
       }
     ]
@@ -91,62 +140,51 @@
 
   "Services": {
     "title": "Services",
-    "subtitle": "Cost",
-    "from": "from",
-    "more": "Learn More",
+    "subtitle": "Pricing",
+    "order_service": "Order Service",
+    "description": "The final cost depends on the complexity and scope of work",
     "items": [
       {
         "id": "1",
-        "title": "Corporate Website",
-        "description": "Creating a modern and functional corporate website that effectively presents your company online.",
-        "price": "6000$",
-        "tags": [
-          "Planning",
-          "Design",
-          "Development",
-          "Copywriting",
-          "Pre-project analysis"
-        ]
+        "title": "Website development",
+        "description": "We build modern websites that attract new clients and strengthen your brand’s credibility. Your business gets an effective online tool for sales growth.",
+        "price": "$1,000",
+        "tags": ["Website", "Online presence", "Clients", "Sales", "Brand"]
       },
       {
         "id": "2",
-        "title": "Landing Page",
-        "description": "Creating a landing page that effectively presents your product and increases conversion.",
-        "price": "from 1000$",
-        "tags": ["Planning", "Design", "Illustration", "Pre-project analysis"]
+        "title": "Business process automation",
+        "description": "Automation relieves your team from routine tasks and errors. We implement digital solutions that increase efficiency and reduce costs.",
+        "price": "$2,500",
+        "tags": ["Automation", "Processes", "Efficiency", "Savings", "CRM"]
       },
       {
         "id": "3",
-        "title": "Branding",
-        "description": "Creating a unique brand that stands out in the market and attracts your target audience.",
-        "price": "2000$",
-        "tags": [
-          "Planning",
-          "Design",
-          "Illustration",
-          "Copywriting",
-          "Pre-project analysis"
-        ]
+        "title": "Custom software development",
+        "description": "We create software tailored to your business tasks. Custom solutions reflect your workflows, help you scale, and provide a competitive edge.",
+        "price": "$10,000",
+        "tags": ["Development", "Integration", "Scaling", "Turnkey", "API"]
       },
       {
         "id": "4",
-        "title": "Presentation Design",
-        "description": "Developing professional presentations that effectively convey your idea to the audience.",
-        "price": "500$",
-        "tags": ["Design", "Illustration", "Copywriting"]
+        "title": "IT support and maintenance",
+        "description": "We ensure reliable system operations and quickly resolve technical issues. Professional 24/7 support protects your business from downtime.",
+        "price": "$500",
+        "tags": ["Support", "Maintenance", "Reliability", "24/7", "Security"]
       },
       {
         "id": "5",
-        "title": "IT-Solutions",
-        "description": "Creating targeted landing pages that help increase conversion and attract new customers.",
-        "price": "800$",
-        "tags": [
-          "Planning",
-          "Design",
-          "Development",
-          "Copywriting",
-          "Pre-project analysis"
-        ]
+        "title": "Data analytics",
+        "description": "We turn business data into clear insights. Analytics reveals new growth opportunities and supports informed decisions.",
+        "price": "$1,500",
+        "tags": ["Analytics", "Data", "Reports", "Insights", "Strategy"]
+      },
+      {
+        "id": "6",
+        "title": "Interface design",
+        "description": "We craft user-friendly, attractive interfaces for your apps and websites. Thoughtful design improves customer experience and trust.",
+        "price": "$800",
+        "tags": ["Design", "Interfaces", "UX", "UI", "Usability"]
       }
     ]
   }
