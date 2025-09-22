@@ -7,5 +7,5 @@ export const navigationLinks: navigationLinks[] = [
   { name: "projects", href: "#projects" },
   { name: "reviews", href: "#reviews" },
   { name: "services", href: "#services" },
-  { name: "about", href: "#about" },
+  { name: "team", href: "#team" },
 ];

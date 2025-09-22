@@ -1,14 +1,14 @@
+import { Member } from "@/types/member.types";
 import { useTranslations } from "next-intl";
-import { ServiceCard } from "./service-card";
-import type { Service } from "@/types/service.types";
+import { MemberCard } from "./member-card";
 
-export default function Services() {
-  const t = useTranslations("Services");
-  const items = t.raw("items") as Service[];
+export default function Team() {
+  const t = useTranslations("Team");
+  const team = t.raw("members") as Member[];
 
   return (
     <article
-      id="services"
+      id="team"
       className="container mx-auto px-[15px] py-20 flex flex-col items-center gap-10"
     >
       <div className="w-full flex flex-col gap-[10px]">
@@ -20,9 +20,9 @@ export default function Services() {
         </h2>
       </div>
 
-      <section className="flex flex-wrap justify-center gap-5">
-        {items.map((service) => (
-          <ServiceCard key={service.id} service={service} />
+      <section className="grid grid-cols-3 gap-5">
+        {team.map((member) => (
+          <MemberCard key={member.id} member={member} />
         ))}
       </section>
     </article>

@@ -7,6 +7,7 @@ import {
   SheetTitle,
   SheetTrigger,
   SheetClose,
+  SheetDescription,
 } from "@/components/ui/sheet";
 import { Button } from "@ui/button";
 import { useState } from "react";
@@ -45,6 +46,7 @@ export function NavigationLinksMobile({ landing = true }: NavigationProps) {
         <SheetHeader>
           <SheetTitle>
             <SheetClose asChild className="focus:ring-0" />
+            <SheetDescription />
           </SheetTitle>
         </SheetHeader>
         <span id="mobile-menu-description" className="sr-only">

@@ -18,9 +18,9 @@ export default function Reviews() {
   return (
     <article
       id="reviews"
-      className="container mx-auto px-[15px] py-20 flex flex-col items-center"
+      className="container mx-auto px-[15px] py-20 flex flex-col items-center gap-10"
     >
-      <div className="w-full flex flex-col gap-[10px] mb-6 sm:mb-8">
+      <div className="w-full flex flex-col gap-[10px]">
         <p className="font-tektur text-xs md:text-sm text-foreground/70">
           {t("subtitle")}
         </p>
@@ -46,7 +46,7 @@ export default function Reviews() {
                 <div className="flex-1 lg:w-1/2 flex flex-col gap-10 text-wrap">
                   <Image
                     src={review.logo}
-                    alt={review.id}
+                    alt={review.company}
                     width={200}
                     height={100}
                     className="w-auto h-[38px] object-contain mr-auto"
@@ -70,7 +70,7 @@ export default function Reviews() {
                 <ProjectImageModal
                   src={review.image}
                   alt={review.name}
-                  title={review.id}
+                  title={review.company}
                 >
                   <div className="relative overflow-hidden cursor-pointer group rounded-[30px]">
                     <Image

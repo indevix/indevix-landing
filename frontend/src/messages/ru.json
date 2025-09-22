@@ -15,7 +15,7 @@
     "all projects": "Посмотреть все проекты",
     "reviews": "Отзывы",
     "services": "Услуги",
-    "about": "О нас",
+    "team": "Команда",
     "mobileMenuDescription": "Навигация по разделам сайта"
   },
 
@@ -109,7 +109,7 @@
     "view_all": "Посмотреть весь сайт",
     "items": [
       {
-        "id": "1",
+        "id": 1,
         "company": "technonicol",
         "logo": "/reviews/example.png",
         "name": "Довлуру Т.Э.",
@@ -118,7 +118,7 @@
         "image": "/projects/example.png"
       },
       {
-        "id": "2",
+        "id": 2,
         "company": "client2",
         "logo": "/reviews/example.png",
         "name": "Екатерина Л.",
@@ -127,7 +127,7 @@
         "image": "/projects/example.png"
       },
       {
-        "id": "3",
+        "id": 3,
         "company": "client3",
         "logo": "/reviews/example.png",
         "name": "Алексей С.",
@@ -145,47 +145,88 @@
     "description": "Итоговая стоимость зависит от сложности и объёма работ",
     "items": [
       {
-        "id": "1",
+        "id": 1,
         "title": "Разработка веб-сайтов",
         "description": "Создаём современные сайты, которые привлекают новых клиентов и повышают доверие к вашему бренду. Ваш бизнес получает эффективный онлайн-инструмент для роста продаж.",
         "price": "$1,000",
         "tags": ["Website", "Online presence", "Clients", "Sales", "Brand"]
       },
       {
-        "id": "2",
+        "id": 2,
         "title": "Автоматизация бизнес-процессов",
         "description": "Автоматизация избавляет вашу команду от рутинных задач и ошибок. Мы внедряем цифровые решения, которые повышают эффективность работы и сокращают издержки.",
         "price": "$2,500",
         "tags": ["Automation", "Processes", "Efficiency", "Savings", "CRM"]
       },
       {
-        "id": "3",
+        "id": 3,
         "title": "Индивидуальная разработка ПО",
         "description": "Создаём программные решения под задачи вашего бизнеса. Индивидуальное ПО учитывает особенности вашей работы, помогает вашему бизнесу масштабироваться и даёт конкурентное преимущество.",
         "price": "$10,000",
         "tags": ["Development", "Integration", "Scaling", "Turnkey", "API"]
       },
       {
-        "id": "4",
+        "id": 4,
         "title": "IT-поддержка и обслуживание",
         "description": "Мы обеспечиваем надёжную работу ваших систем и оперативно решаем технические проблемы. Профессиональная поддержка 24/7 защищает ваш бизнес от простоев и сбоев.",
         "price": "$500",
         "tags": ["Support", "Maintenance", "Reliability", "24/7", "Security"]
       },
       {
-        "id": "5",
+        "id": 5,
         "title": "Аналитика данных",
         "description": "Мы превращаем бизнес-данные в понятные инсайты. Аналитика показывает новые возможности для роста и помогает принимать обоснованные решения.",
         "price": "$1,500",
         "tags": ["Analytics", "Data", "Reports", "Insights", "Strategy"]
       },
       {
-        "id": "6",
+        "id": 6,
         "title": "Дизайн интерфейсов",
         "description": "Создаём удобные и привлекательные интерфейсы для ваших приложений и сайтов. Продуманный дизайн улучшает впечатление клиентов и укрепляет доверие к вашему бренду.",
         "price": "$800",
         "tags": ["Design", "Interfaces", "UX", "UI", "Usability"]
       }
     ]
+  },
+
+  "Team": {
+    "title": "Над проектами работает сильная команда",
+    "subtitle": "Команда",
+    "members": [
+      {
+        "id": 1,
+        "name": "Тимур",
+        "position": ["CEO", "Project Manager"],
+        "photo": "/team/timur.png"
+      },
+      {
+        "id": 2,
+        "name": "Данияр",
+        "position": ["Tech Lead", "Senior Full-Stack Developer"],
+        "photo": "/team/daniyar.png"
+      },
+      {
+        "id": 3,
+        "name": "Санжар",
+        "position": ["Lead Developer", "Senior Backend Developer"],
+        "photo": "/team/sanjar.png"
+      },
+      {
+        "id": 4,
+        "name": "Мухамед-Али",
+        "position": ["Lead Developer", "Senior Backend Developer"],
+        "photo": "/team/muhamed_ali.png"
+      },
+      {
+        "id": 5,
+        "name": "Бекжан",
+        "position": ["Lead Developer", "Senior Frontend Developer"],
+        "photo": "/team/bekzhan.png"
+      }
+    ]
+  },
+
+  "Slogan": {
+    "subtitle": "Indevix"
   }
 }

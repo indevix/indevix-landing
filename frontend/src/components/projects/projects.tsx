@@ -16,7 +16,7 @@ export default function Projects({ limit, all = false }: ProjectsProps) {
   return (
     <article
       id="projects"
-      className="container flex flex-col mx-auto px-[15px] py-20 gap-[40px] items-center"
+      className="container flex flex-col mx-auto px-[15px] py-20 gap-10 items-center"
     >
       <h2 className="text-3xl md:text-[40px] font-semibold w-full">
         {t("projects")}

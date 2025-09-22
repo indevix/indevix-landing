@@ -15,7 +15,7 @@
     "all projects": "Бардык долбоорлорду көрүү",
     "reviews": "Пикирлер",
     "services": "Кызматтар",
-    "about": "Биз жөнүндө",
+    "team": "Команда",
     "mobileMenuDescription": "Сайт бөлүмдөрү боюнча өтүү"
   },
 
@@ -109,7 +109,7 @@
     "view_all": "Толук сайтты көрүү",
     "items": [
       {
-        "id": "1",
+        "id": 1,
         "company": "technonicol",
         "logo": "/reviews/example.png",
         "name": "Довлуру Т.Э.",
@@ -118,7 +118,7 @@
         "image": "/projects/example.png"
       },
       {
-        "id": "2",
+        "id": 2,
         "company": "client2",
         "logo": "/reviews/example.png",
         "name": "Екатерина Л.",
@@ -127,7 +127,7 @@
         "image": "/projects/example.png"
       },
       {
-        "id": "3",
+        "id": 3,
         "company": "client3",
         "logo": "/reviews/example.png",
         "name": "Алексей С.",
@@ -145,46 +145,83 @@
     "description": "Жалпы баа иштин татаалдыгына жана көлөмүнө жараша болот",
     "items": [
       {
-        "id": "1",
+        "id": 1,
         "title": "Веб-сайттарды иштеп чыгуу",
         "description": "Жаңы кардарларды тартуучу жана брендиңизге ишенимди жогорулатуучу заманбап сайттарды түзөбүз. Бизнесиңиз сатуу өсүшү үчүн натыйжалуу онлайн куралга ээ болот.",
         "price": "$1,000",
         "tags": ["Website", "Online presence", "Clients", "Sales", "Brand"]
       },
       {
-        "id": "2",
+        "id": 2,
         "title": "Бизнес-процесстерди автоматташтыруу",
         "description": "Автоматташтыруу командаңызды рутинадан жана каталардан арылтат. Натыйжалуулукту жогорулатып, чыгымдарды кыскартуучу санариптик чечимдерди киргизебиз.",
         "price": "$2,500",
         "tags": ["Automation", "Processes", "Efficiency", "Savings", "CRM"]
       },
       {
-        "id": "3",
+        "id": 3,
         "title": "Жеке программалык камсыздоо",
         "description": "Бизнесиңиздин муктаждыктарына ылайык программалык чечимдерди түзөбүз. Жеке ПМК иш агымдарыңызга шайкеш келип, масштабдоого жардам берет жана атаандаштык артыкчылык берет.",
         "price": "$10,000",
         "tags": ["Development", "Integration", "Scaling", "Turnkey", "API"]
       },
       {
-        "id": "4",
+        "id": 4,
         "title": "IT колдоо жана тейлөө",
         "description": "Системаларыңыздын ишенимдүү иштөөсүн камсыз кылабыз жана техникалык маселелерди ыкчам чечебиз. Кесипкөй 24/7 колдоо бизнесиңизди токтоп калуудан коргойт.",
         "price": "$500",
         "tags": ["Support", "Maintenance", "Reliability", "24/7", "Security"]
       },
       {
-        "id": "5",
+        "id": 5,
         "title": "Маалымат аналитикасы",
         "description": "Бизнес-maalymattardy түшүнүктүү инсайттарга айландырабыз. Аналитика өсүш мүмкүнчүлүктөрүн ачып, негизделген чечимдерди кабыл алууга жардам берет.",
         "price": "$1,500",
         "tags": ["Analytics", "Data", "Reports", "Insights", "Strategy"]
       },
       {
-        "id": "6",
+        "id": 6,
         "title": "Интерфейс дизайны",
         "description": "Тиркемелер жана сайттар үчүн ыңгайлуу, жагымдуу интерфейстерди жасайбыз. Ойлонулган дизайн кардар тажрыйбасын жакшыртып, ишенимди арттырат.",
         "price": "$800",
         "tags": ["Design", "Interfaces", "UX", "UI", "Usability"]
+      }
+    ]
+  },
+
+  "Team": {
+    "title": "A strong team works on the projects",
+    "subtitle": "Team",
+    "members": [
+      {
+        "id": 1,
+        "name": "Тимур",
+        "position": ["CEO", "Project Manager"],
+        "photo": "/team/timur.png"
+      },
+      {
+        "id": 2,
+        "name": "Данияр",
+        "position": ["Tech Lead", "Senior Full-Stack Developer"],
+        "photo": "/team/daniyar.png"
+      },
+      {
+        "id": 3,
+        "name": "Санжар",
+        "position": ["Lead Developer", "Senior Backend Developer"],
+        "photo": "/team/sanjar.png"
+      },
+      {
+        "id": 4,
+        "name": "Мухамед-Али",
+        "position": ["Lead Developer", "Senior Backend Developer"],
+        "photo": "/team/muhamed_ali.png"
+      },
+      {
+        "id": 5,
+        "name": "Бекжан",
+        "position": ["Lead Developer", "Senior Frontend Developer"],
+        "photo": "/team/bekzhan.png"
       }
     ]
   }

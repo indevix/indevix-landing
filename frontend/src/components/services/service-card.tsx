@@ -8,13 +8,7 @@ import { useState } from "react";
 import { ServiceModal } from "./service-modal";
 import type { Service } from "@/types/service.types";
 
-export function ServiceCard({
-  service,
-  key,
-}: {
-  service: Service;
-  key: string;
-}) {
+export function ServiceCard({ service }: { service: Service }) {
   const t = useTranslations("Shared");
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,8 +23,7 @@ export function ServiceCard({
 
   return (
     <motion.div
-      key={key}
-      className="group relative flex flex-col justify-between w-[440px] h-[490px] bg-card border border-border p-6 rounded-[30px] overflow-hidden cursor-pointer"
+      className="group relative flex flex-col justify-between max-w-[350px] xl:max-w-[400px] min-h-[490px] max-h-[490px] bg-card border border-border p-6 rounded-[30px] overflow-hidden cursor-pointer"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       initial={{ opacity: 0, y: 20 }}
@@ -54,6 +47,51 @@ export function ServiceCard({
         animate={{ opacity: isHovered ? 1 : 0 }}
         transition={{ duration: 0.3 }}
       />
+
+      <div className="absolute inset-0 opacity-[0.15]">
+        <svg
+          width="400"
+          height="490"
+          viewBox="0 0 400 490"
+          fill="none"
+          className="w-full h-full"
+        >
+          <g clipPath="url(#clip0_6_2)">
+            <rect
+              x="-150"
+              y="400"
+              width="495.503"
+              height="150"
+              rx="75"
+              transform="rotate(-18 -119 380)"
+              fill="currentColor"
+            />
+            <rect
+              x="-100"
+              y="510"
+              width="622.887"
+              height="150"
+              rx="75"
+              transform="rotate(-18 -51 400)"
+              fill="currentColor"
+            />
+          </g>
+          <rect
+            x="1"
+            y="1"
+            width="400"
+            height="1000"
+            rx="29"
+            strokeWidth="2"
+            opacity="0.3"
+          />
+          <defs>
+            <clipPath id="clip0_6_2">
+              <rect width="400" height="1000" rx="30" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
 
       <div className="relative z-10 flex flex-col gap-10">
         <motion.h3

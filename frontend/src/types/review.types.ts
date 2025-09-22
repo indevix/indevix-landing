@@ -1,5 +1,6 @@
 export interface Review {
-  id: string;
+  id: number;
+  company: string;
   logo: string;
   name: string;
   position: string;

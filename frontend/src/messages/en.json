@@ -15,7 +15,7 @@
     "all projects": "View all projects",
     "reviews": "Reviews",
     "services": "Services",
-    "about": "About us",
+    "team": "Team",
     "mobileMenuDescription": "Site navigation"
   },
 
@@ -109,7 +109,7 @@
     "view_all": "View full site",
     "items": [
       {
-        "id": "1",
+        "id": 1,
         "company": "technonicol",
         "logo": "/reviews/example.png",
         "name": "Dovluru T.E.",
@@ -118,7 +118,7 @@
         "image": "/projects/example.png"
       },
       {
-        "id": "2",
+        "id": 2,
         "company": "client2",
         "logo": "/reviews/example.png",
         "name": "Ekaterina L.",
@@ -127,7 +127,7 @@
         "image": "/projects/example.png"
       },
       {
-        "id": "3",
+        "id": 3,
         "company": "client3",
         "logo": "/reviews/example.png",
         "name": "Aleksey S.",
@@ -145,46 +145,83 @@
     "description": "The final cost depends on the complexity and scope of work",
     "items": [
       {
-        "id": "1",
+        "id": 1,
         "title": "Website development",
         "description": "We build modern websites that attract new clients and strengthen your brand’s credibility. Your business gets an effective online tool for sales growth.",
         "price": "$1,000",
         "tags": ["Website", "Online presence", "Clients", "Sales", "Brand"]
       },
       {
-        "id": "2",
+        "id": 2,
         "title": "Business process automation",
         "description": "Automation relieves your team from routine tasks and errors. We implement digital solutions that increase efficiency and reduce costs.",
         "price": "$2,500",
         "tags": ["Automation", "Processes", "Efficiency", "Savings", "CRM"]
       },
       {
-        "id": "3",
+        "id": 3,
         "title": "Custom software development",
         "description": "We create software tailored to your business tasks. Custom solutions reflect your workflows, help you scale, and provide a competitive edge.",
         "price": "$10,000",
         "tags": ["Development", "Integration", "Scaling", "Turnkey", "API"]
       },
       {
-        "id": "4",
+        "id": 4,
         "title": "IT support and maintenance",
         "description": "We ensure reliable system operations and quickly resolve technical issues. Professional 24/7 support protects your business from downtime.",
         "price": "$500",
         "tags": ["Support", "Maintenance", "Reliability", "24/7", "Security"]
       },
       {
-        "id": "5",
+        "id": 5,
         "title": "Data analytics",
         "description": "We turn business data into clear insights. Analytics reveals new growth opportunities and supports informed decisions.",
         "price": "$1,500",
         "tags": ["Analytics", "Data", "Reports", "Insights", "Strategy"]
       },
       {
-        "id": "6",
+        "id": 6,
         "title": "Interface design",
         "description": "We craft user-friendly, attractive interfaces for your apps and websites. Thoughtful design improves customer experience and trust.",
         "price": "$800",
         "tags": ["Design", "Interfaces", "UX", "UI", "Usability"]
+      }
+    ]
+  },
+
+  "Team": {
+    "title": "A strong team works on the projects",
+    "subtitle": "Team",
+    "members": [
+      {
+        "id": 1,
+        "name": "Timur",
+        "position": ["CEO", "Project Manager"],
+        "photo": "/team/timur.png"
+      },
+      {
+        "id": 2,
+        "name": "Daniyar",
+        "position": ["Tech Lead", "Senior Full-Stack Developer"],
+        "photo": "/team/daniyar.png"
+      },
+      {
+        "id": 3,
+        "name": "Sanjar",
+        "position": ["Lead Developer", "Senior Backend Developer"],
+        "photo": "/team/sanjar.png"
+      },
+      {
+        "id": 4,
+        "name": "Muhamed-Ali",
+        "position": ["Lead Developer", "Senior Backend Developer"],
+        "photo": "/team/muhamed_ali.png"
+      },
+      {
+        "id": 5,
+        "name": "Bekzhan",
+        "position": ["Lead Developer", "Senior Frontend Developer"],
+        "photo": "/team/bekzhan.png"
       }
     ]
   }

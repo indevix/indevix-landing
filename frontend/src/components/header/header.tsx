@@ -4,7 +4,7 @@ import { NavigationLinks } from "./navigation-links";
 import { Contacts } from "./contacts";
 import { NavigationLinksMobile } from "./navigation-links-mobile";
 
-export function Header({ locale }: { locale: string }) {
+export default function Header({ locale }: { locale: string }) {
   return (
     <header className="w-full max-w-[2000px] h-20 items-center mx-auto flex justify-between py-5 fixed center top-0 left-0 right-0 z-20 bg-background/95">
       <Link href={`/${locale}`} aria-label="Go to homepage" className="block">

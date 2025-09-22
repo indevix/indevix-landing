@@ -1,12 +1,14 @@
 import { PageParams } from "@/types/page-params.types";
-import { Header } from "@components/header/header";
+import { Locale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+import { use } from "react";
+import Header from "@components/header/header";
 import Hero from "@components/hero/hero";
 import Projects from "@components/projects/projects";
 import Reviews from "@components/reviews/reviews";
 import Services from "@components/services/services";
-import { Locale } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
-import { use } from "react";
+import Team from "@components/team/team";
+import Slogan from "@components/slogan/slogan";
 
 export default function HomePage({ params }: PageParams) {
   const { locale } = use(params);
@@ -20,6 +22,8 @@ export default function HomePage({ params }: PageParams) {
       <Projects limit={3} />
       <Reviews />
       <Services />
+      <Team />
+      <Slogan />
     </main>
   );
 }

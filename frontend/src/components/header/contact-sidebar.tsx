@@ -6,6 +6,7 @@ import { contactsMeta } from "@config/contacts-meta";
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
 } from "@/components/ui/sheet";
@@ -27,16 +28,19 @@ export function ContactSidebar({ isOpen, onClose }: ContactSidebarProps) {
       >
         <SheetHeader className="p-5 border-b">
           <SheetTitle className="text-left">{t("title")}</SheetTitle>
+          <SheetDescription className="text-left text-xs text-muted-foreground">
+            Indevix
+          </SheetDescription>
         </SheetHeader>
 
         <span id="contact-sidebar-description" className="sr-only">
           {t("title")}
         </span>
 
-        <section className="w-full flex flex-col items-center p-5">
+        <section className="w-full flex flex-col items-center">
           <a
             href={contactsMeta.phone.href}
-            className="flex flex-col w-full text-foreground hover:bg-accent/50 px-5 py-[10px] rounded-lg transition-colors"
+            className="flex flex-col w-full text-foreground hover:bg-accent/50 px-5 py-[10px] transition-colors"
           >
             <p className="text-sm md:text-base text-muted-foreground">
               {t("phone.label")}
@@ -48,7 +52,7 @@ export function ContactSidebar({ isOpen, onClose }: ContactSidebarProps) {
 
           <a
             href={contactsMeta.email.href}
-            className="flex flex-col w-full text-foreground hover:bg-accent/50 px-5 py-[10px] rounded-lg transition-colors"
+            className="flex flex-col w-full text-foreground hover:bg-accent/50 px-5 py-[10px] transition-colors"
           >
             <p className="text-sm md:text-base text-muted-foreground">
               {contactsMeta.email.label}
@@ -58,7 +62,7 @@ export function ContactSidebar({ isOpen, onClose }: ContactSidebarProps) {
             </span>
           </a>
 
-          <div className="flex flex-col gap-4 mt-8 w-full">
+          <div className="flex flex-col gap-4 mt-8 w-[90%]">
             <Button
               asChild
               className="w-full hover:text-[#25d366] hover:bg-background transition-all duration-200 ease-in-out hover:scale-105"

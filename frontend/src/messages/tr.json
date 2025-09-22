@@ -15,7 +15,7 @@
     "all projects": "Tüm projeleri görüntüle",
     "reviews": "Yorumlar",
     "services": "Hizmetler",
-    "about": "Hakkımızda",
+    "team": "Takım",
     "mobileMenuDescription": "Site gezinmesi"
   },
 
@@ -109,7 +109,7 @@
     "view_all": "Tüm siteyi görüntüle",
     "items": [
       {
-        "id": "1",
+        "id": 1,
         "company": "technonicol",
         "logo": "/reviews/example.png",
         "name": "Dovluru T.E.",
@@ -118,7 +118,7 @@
         "image": "/projects/example.png"
       },
       {
-        "id": "2",
+        "id": 2,
         "company": "client2",
         "logo": "/reviews/example.png",
         "name": "Ekaterina L.",
@@ -127,7 +127,7 @@
         "image": "/projects/example.png"
       },
       {
-        "id": "3",
+        "id": 3,
         "company": "client3",
         "logo": "/reviews/example.png",
         "name": "Aleksey S.",
@@ -145,46 +145,83 @@
     "description": "İtibariyle, toplam maliyet işin karmaşıklığına ve kapsamına bağlıdır",
     "items": [
       {
-        "id": "1",
+        "id": 1,
         "title": "Web sitesi geliştirme",
         "description": "Yeni müşteriler çeken ve markanıza güveni artıran modern web siteleri geliştiriyoruz. İşletmeniz satış büyümesi için etkili bir çevrimiçi araca sahip olur.",
         "price": "$1,000",
         "tags": ["Website", "Online presence", "Clients", "Sales", "Brand"]
       },
       {
-        "id": "2",
+        "id": 2,
         "title": "İş süreçlerinin otomasyonu",
         "description": "Otomasyon ekibinizi rutin işlerden ve hatalardan kurtarır. Verimliliği artıran ve maliyetleri azaltan dijital çözümler uygularız.",
         "price": "$2,500",
         "tags": ["Automation", "Processes", "Efficiency", "Savings", "CRM"]
       },
       {
-        "id": "3",
+        "id": 3,
         "title": "Özel yazılım geliştirme",
         "description": "İş ihtiyaçlarınıza uygun yazılım çözümleri üretiyoruz. Özel yazılım süreçlerinize uyum sağlar, ölçeklenmenize yardımcı olur ve rekabet avantajı sunar.",
         "price": "$10,000",
         "tags": ["Development", "Integration", "Scaling", "Turnkey", "API"]
       },
       {
-        "id": "4",
+        "id": 4,
         "title": "IT destek ve bakım",
         "description": "Sistemlerinizin güvenilir çalışmasını sağlarız ve teknik sorunları hızla çözeriz. Profesyonel 7/24 destek, işinizin duraksamasını önler.",
         "price": "$500",
         "tags": ["Support", "Maintenance", "Reliability", "24/7", "Security"]
       },
       {
-        "id": "5",
+        "id": 5,
         "title": "Veri analitiği",
         "description": "İş verilerini anlaşılır içgörülere dönüştürüyoruz. Analitik, büyüme fırsatlarını gösterir ve bilinçli kararlar almanızı sağlar.",
         "price": "$1,500",
         "tags": ["Analytics", "Data", "Reports", "Insights", "Strategy"]
       },
       {
-        "id": "6",
+        "id": 6,
         "title": "Arayüz tasarımı",
         "description": "Uygulamalarınız ve web siteleriniz için kullanışlı ve çekici arayüzler tasarlarız. Düşünülmüş tasarım, müşteri deneyimini ve güveni artırır.",
         "price": "$800",
         "tags": ["Design", "Interfaces", "UX", "UI", "Usability"]
+      }
+    ]
+  },
+
+  "Team": {
+    "title": "A strong team works on the projects",
+    "subtitle": "Team",
+    "members": [
+      {
+        "id": 1,
+        "name": "Timur",
+        "position": ["CEO", "Project Manager"],
+        "photo": "/team/timur.png"
+      },
+      {
+        "id": 2,
+        "name": "Daniyar",
+        "position": ["Tech Lead", "Senior Full-Stack Developer"],
+        "photo": "/team/daniyar.png"
+      },
+      {
+        "id": 3,
+        "name": "Sanjar",
+        "position": ["Lead Developer", "Senior Backend Developer"],
+        "photo": "/team/sanjar.png"
+      },
+      {
+        "id": 4,
+        "name": "Muhamed-Ali",
+        "position": ["Lead Developer", "Senior Backend Developer"],
+        "photo": "/team/muhamed_ali.png"
+      },
+      {
+        "id": 5,
+        "name": "Bekzhan",
+        "position": ["Lead Developer", "Senior Frontend Developer"],
+        "photo": "/team/bekzhan.png"
       }
     ]
   }
