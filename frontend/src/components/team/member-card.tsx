@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function MemberCard({ member }: { member: Member }) {
   return (
-    <div className="flex items-center max-w-[440px] gap-5 p-5 bg-card border border-border rounded-[40px]">
+    <div className="flex items-center gap-5 p-5 bg-card border border-border rounded-[40px]">
       <Image
         src={member.photo}
         alt={member.name}

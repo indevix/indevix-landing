@@ -1,5 +1,3 @@
-"use client";
-
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@ui/dialog";
 import Image from "next/image";
 import { ReactNode } from "react";

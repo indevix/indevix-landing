@@ -19,7 +19,7 @@
     "mobileMenuDescription": "Сайт бөлүмдөрү боюнча өтүү"
   },
 
-  "ContactSidebar": {
+  "Contact": {
     "title": "Байланыш",
     "phone": {
       "label": "Телефон"
@@ -190,9 +190,15 @@
   },
 
   "Team": {
-    "title": "A strong team works on the projects",
-    "subtitle": "Team",
+    "title": "Күчтүү команда долбоорлордо иштейт",
+    "subtitle": "Команда",
     "members": [
+      {
+        "id": 0,
+        "name": "Ринат",
+        "position": ["Учредитель"],
+        "photo": "/team/rinat.png"
+      },
       {
         "id": 1,
         "name": "Тимур",
@@ -213,16 +219,35 @@
       },
       {
         "id": 4,
-        "name": "Мухамед-Али",
-        "position": ["Lead Developer", "Senior Backend Developer"],
-        "photo": "/team/muhamed_ali.png"
-      },
-      {
-        "id": 5,
         "name": "Бекжан",
         "position": ["Lead Developer", "Senior Frontend Developer"],
         "photo": "/team/bekzhan.png"
+      },
+      {
+        "id": 5,
+        "name": "Мухамед-Али",
+        "position": ["Lead Developer", "Senior Backend Developer"],
+        "photo": "/team/muhamed_ali.png"
       }
     ]
+  },
+
+  "Slogan": {
+    "subtitle": "Indevix",
+    "title": "Биз идеяларды даяр чечимдерге айландырабыз",
+    "1": "Биз",
+    "2": "идеяларды",
+    "3": "даяр",
+    "4": "чечимдерге",
+    "5": "айландырабыз"
+  },
+
+  "Request": {
+    "title": "Давайте обсудим ваш проект",
+    "subtitle": "Сразу о деле",
+    "description": "Уже на первом звонке мы чётко определим вашу задачу, оценим варианты её решения и сразу отсеем неподходящие подходы. Вы получите ясное понимание инструментов, которые реально работают именно для вашего бизнеса.",
+    "first_name": "Тимур",
+    "second_name": "Шермаматов",
+    "position": "CEO"
   }
 }

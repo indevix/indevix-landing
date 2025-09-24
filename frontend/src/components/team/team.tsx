@@ -20,7 +20,7 @@ export default function Team() {
         </h2>
       </div>
 
-      <section className="grid grid-cols-3 gap-5">
+      <section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 w-full">
         {team.map((member) => (
           <MemberCard key={member.id} member={member} />
         ))}

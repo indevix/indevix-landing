@@ -9,6 +9,8 @@ import Reviews from "@components/reviews/reviews";
 import Services from "@components/services/services";
 import Team from "@components/team/team";
 import Slogan from "@components/slogan/slogan";
+import Request from "@components/request/request";
+import Footer from "@components/footer/footer";
 
 export default function HomePage({ params }: PageParams) {
   const { locale } = use(params);
@@ -23,7 +25,9 @@ export default function HomePage({ params }: PageParams) {
       <Reviews />
       <Services />
       <Team />
-      <Slogan />
+      {/* <Slogan /> */}
+      <Request />
+      <Footer />
     </main>
   );
 }

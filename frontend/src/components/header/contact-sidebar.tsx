@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import { Button } from "@ui/button";
 import { contactsMeta } from "@config/contacts-meta";
@@ -17,7 +15,7 @@ interface ContactSidebarProps {
 }
 
 export function ContactSidebar({ isOpen, onClose }: ContactSidebarProps) {
-  const t = useTranslations("ContactSidebar");
+  const t = useTranslations("Contact");
 
   return (
     <Sheet open={isOpen} onOpenChange={(open) => !open && onClose()}>

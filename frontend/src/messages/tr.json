@@ -19,7 +19,7 @@
     "mobileMenuDescription": "Site gezinmesi"
   },
 
-  "ContactSidebar": {
+  "Contact": {
     "title": "İletişim",
     "phone": {
       "label": "Telefon"
@@ -190,9 +190,15 @@
   },
 
   "Team": {
-    "title": "A strong team works on the projects",
-    "subtitle": "Team",
+    "title": "Güçlü bir ekip projeler üzerinde çalışıyor",
+    "subtitle": "Ekip",
     "members": [
+      {
+        "id": 0,
+        "name": "Rinat",
+        "position": ["Kurucu"],
+        "photo": "/team/rinat.png"
+      },
       {
         "id": 1,
         "name": "Timur",
@@ -213,16 +219,35 @@
       },
       {
         "id": 4,
-        "name": "Muhamed-Ali",
-        "position": ["Lead Developer", "Senior Backend Developer"],
-        "photo": "/team/muhamed_ali.png"
-      },
-      {
-        "id": 5,
         "name": "Bekzhan",
         "position": ["Lead Developer", "Senior Frontend Developer"],
         "photo": "/team/bekzhan.png"
+      },
+      {
+        "id": 5,
+        "name": "Muhamed-Ali",
+        "position": ["Lead Developer", "Senior Backend Developer"],
+        "photo": "/team/muhamed_ali.png"
       }
     ]
+  },
+
+  "Slogan": {
+    "subtitle": "Indevix",
+    "title": "Biz fikirleri hazır çözümlere dönüştürüyoruz",
+    "1": "Biz",
+    "2": "fikirleri",
+    "3": "hazır",
+    "4": "çözümlere",
+    "5": "dönüştürüyoruz"
+  },
+
+  "Request": {
+    "title": "Let's discuss your project",
+    "subtitle": "Straight to the point",
+    "description": "During the first call, we will clearly define your task, evaluate possible solutions, and immediately filter out unsuitable approaches. You will gain a clear understanding of the tools that actually work for your business.",
+    "first_name": "Timur",
+    "second_name": "Shermamatov",
+    "position": "CEO"
   }
 }

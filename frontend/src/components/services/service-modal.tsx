@@ -173,8 +173,12 @@ export function ServiceModal({ service, isOpen, onClose }: ServiceModalProps) {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Button className="w-full py-3 px-6" size="lg">
-                  {s("order_service")}
+                <Button
+                  className="w-full py-3 px-6"
+                  size="lg"
+                  onClick={onClose}
+                >
+                  <a href="#request">{s("order_service")}</a>
                 </Button>
               </motion.div>
             </motion.div>

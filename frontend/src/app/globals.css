@@ -48,7 +48,7 @@
   --radius: 0.625rem;
   --background: oklch(15.907% 0.00002 271.152);
   --foreground: oklch(100% 0.00011 271.152);
-  --card: oklab(20.463% 0 -0.00002);
+  --card: #141414;
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
@@ -145,5 +145,8 @@
   }
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
   }
 }
