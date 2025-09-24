@@ -14,32 +14,60 @@ const tektur = Tektur({
 
 type LayoutProps = {
   children: ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 };
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata(props: Omit<LayoutProps, "children">) {
-  const { locale } = await props.params;
+const BASE_URL = "https://indevix.com";
+
+export async function generateMetadata({
+  params,
+}: Omit<LayoutProps, "children">) {
+  const { locale } = params;
+  if (!hasLocale(routing.locales, locale)) notFound();
 
   const t = await getTranslations({
     locale: locale as Locale,
     namespace: "LocaleLayout",
   });
 
+  const languages = Object.fromEntries(
+    routing.locales.map((l) => [l, `${BASE_URL}/${l}`])
+  ) as Record<string, string>;
+
   return {
+    metadataBase: new URL(BASE_URL),
     title: "Indevix",
     description: t("description"),
+    alternates: {
+      canonical: `/${locale}`, // self-canonical
+      languages: {
+        ...languages,
+        "x-default": "/en",
+      },
+    },
+    openGraph: {
+      url: `/${locale}`,
+      title: "Indevix",
+      description: t("description"),
+      siteName: "Indevix",
+      locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Indevix",
+      description: t("description"),
+    },
   };
 }
 
 export default async function LocaleLayout({ children, params }: LayoutProps) {
-  const { locale } = await params;
-  if (!hasLocale(routing.locales, locale)) {
-    notFound();
-  }
+  const { locale } = params;
+  if (!hasLocale(routing.locales, locale)) notFound();
 
   setRequestLocale(locale);
 
@@ -49,8 +77,9 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
         className={`${montserrat.className} ${tektur.variable} flex min-h-full flex-col bg-background`}
       >
         <div id="modal-root" />
-
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider locale={locale as Locale}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

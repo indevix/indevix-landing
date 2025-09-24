@@ -249,5 +249,12 @@
     "first_name": "Timur",
     "second_name": "Shermamatov",
     "position": "CEO"
+  },
+
+  "Footer": {
+    "Disclaimer": "This site is for informational purposes only and is not a public offer under any circumstances",
+    "Copyright": "© Indevix. All rights reserved.",
+    "Trademark": "Trademark",
+    "Info": "LLC \"Indevix\"\nTIN *****, OGRN *****\nLegal address: *****,\n*****\n*****"
   }
 }

@@ -2,27 +2,21 @@ import { Project } from "@/types/project.types";
 
 export const projectsData: Project[] = [
   {
-    title: "Project One",
+    title: "Underground",
     kind: "Landing Page",
-    tags: ["1 month", "Design", "Development", "Planning"],
+    tags: ["2 weeks", "Design", "Development", "Planning", "Copywriting"],
     url: "/projects/underground.png",
   },
   {
-    title: "Project Two",
+    title: "Gurman",
     kind: "E-commerce",
-    tags: ["3 months", "Design", "Development", "Planning"],
+    tags: ["2 months", "Design", "Development", "Planning"],
     url: "/projects/gurman.jpeg",
   },
   {
-    title: "Project Three",
-    kind: "Web Application",
-    tags: ["2 months", "Design", "Development", "Planning"],
+    title: "Gurman CRM",
+    kind: "CRM System",
+    tags: ["3 months", "Design", "Development", "Planning"],
     url: "/projects/gurman-crm.jpeg",
-  },
-  {
-    title: "Project Four",
-    kind: "Mobile App",
-    tags: ["1 week", "Design", "Development", "Planning"],
-    url: "/projects/example.png",
   },
 ];

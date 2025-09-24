@@ -25,7 +25,7 @@ export default function HomePage({ params }: PageParams) {
       <Reviews />
       <Services />
       <Team />
-      {/* <Slogan /> */}
+      <Slogan />
       <Request />
       <Footer />
     </main>
