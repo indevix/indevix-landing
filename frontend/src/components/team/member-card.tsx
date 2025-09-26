@@ -6,10 +6,11 @@ export function MemberCard({ member }: { member: Member }) {
     <div className="flex items-center gap-5 p-5 bg-card border border-border rounded-[40px]">
       <Image
         src={member.photo}
-        alt={member.name}
+        alt={`${member.name} - ${member.position.join(", ")} at Indevix`}
         width={160}
         height={160}
         className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mb-4"
+        loading="lazy"
       />
       <div className="flex flex-col gap-[5px]">
         <h3 className="text-xl font-semibold">{member.name}</h3>

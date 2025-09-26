@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import { permanentRedirect, RedirectType } from "next/navigation";
 
 export default function RootPage() {
-  redirect("/en");
+  permanentRedirect("/en", RedirectType.replace);
 }

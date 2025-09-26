@@ -10,7 +10,7 @@ export default function Header({ locale }: { locale: string }) {
       <Link href={`/${locale}`} aria-label="Go to homepage" className="block">
         <Image
           src="/logo.png"
-          alt="Indevix Logo"
+          alt="Indevix - IT Services & Web Development Company Logo"
           width={200}
           height={200}
           className="h-[30px] md:h-[45px] w-auto my-auto mx-[20px]"

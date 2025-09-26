@@ -9,12 +9,60 @@ import Projects from "@components/projects/projects";
 import { navigationLinks as links } from "@config/navigation-links";
 import LocaleSwitcherSelect from "@components/header/locale-switcher-select";
 import { PageParams } from "@/types/page-params.types";
+import { Metadata } from "next";
+import Footer from "@components/footer/footer";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const titles = {
+    en: "Our Portfolio - Web Development Projects | Indevix",
+    ru: "Наше портфолио - проекты веб-разработки | Indevix",
+    tr: "Portföyümüz - Web Geliştirme Projeleri | Indevix",
+    ky: "Биздин портфолио - веб иштеп чыгуу долбоорлору | Indevix",
+  };
+
+  const descriptions = {
+    en: "Explore our successful web development projects: landing pages, e-commerce, CRM systems. See how we help businesses grow with technology.",
+    ru: "Изучите наши успешные проекты: лендинги, интернет-магазины, CRM-системы. Узнайте, как мы помогаем бизнесу расти.",
+    tr: "Başarılı web geliştirme projelerimizi keşfedin: landing sayfaları, e-ticaret, CRM sistemleri.",
+    ky: "Биздин ийгиликтүү веб иштеп чыгуу долбоорлорун изилдеңиз: лендингдер, онлайн дүкөндөр, CRM системалар.",
+  };
+
+  return {
+    title: titles[locale as keyof typeof titles],
+    description: descriptions[locale as keyof typeof descriptions],
+    alternates: {
+      canonical: `/${locale}/projects`,
+      languages: {
+        en: "https://indevix.com/en/projects",
+        ru: "https://indevix.com/ru/projects",
+        tr: "https://indevix.com/tr/projects",
+        ky: "https://indevix.com/ky/projects",
+        "x-default": "https://indevix.com/en/projects",
+      },
+    },
+    openGraph: {
+      title: titles[locale as keyof typeof titles],
+      description: descriptions[locale as keyof typeof descriptions],
+      url: `https://indevix.com/${locale}/projects`,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: titles[locale as keyof typeof titles],
+      description: descriptions[locale as keyof typeof descriptions],
+    },
+  };
+}
 
 export default function ProjectsPage({ params }: PageParams) {
   const { locale } = use(params);
-
   setRequestLocale(locale as Locale);
-
   const t = useTranslations("Navigation");
 
   return (
@@ -51,7 +99,14 @@ export default function ProjectsPage({ params }: PageParams) {
           <NavigationLinksMobile landing={false} />
         </div>
       </header>
-      <Projects all={true} />
+      <section className="container mx-auto px-[15px] py-10">
+        <h1 className="text-3xl md:text-5xl font-bold text-center mb-10">
+          {t("all projects")}
+        </h1>
+        <Projects all={true} />
+      </section>
+
+      <Footer />
     </main>
   );
 }

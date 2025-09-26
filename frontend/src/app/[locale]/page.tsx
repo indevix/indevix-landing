@@ -11,6 +11,7 @@ import Team from "@components/team/team";
 import Slogan from "@components/slogan/slogan";
 import Request from "@components/request/request";
 import Footer from "@components/footer/footer";
+import { StructuredData } from "@config/structured-data";
 
 export default function HomePage({ params }: PageParams) {
   const { locale } = use(params);
@@ -18,16 +19,19 @@ export default function HomePage({ params }: PageParams) {
   setRequestLocale(locale as Locale);
 
   return (
-    <main>
-      <Header locale={locale} />
-      <Hero />
-      <Projects limit={3} />
-      <Reviews />
-      <Services />
-      <Team />
-      <Slogan />
-      <Request />
-      <Footer />
-    </main>
+    <>
+      <StructuredData locale={locale} />
+      <main>
+        <Header locale={locale} />
+        <Hero />
+        <Projects limit={3} />
+        {/* <Reviews /> */}
+        <Services />
+        <Team />
+        <Slogan />
+        <Request />
+        <Footer />
+      </main>
+    </>
   );
 }
