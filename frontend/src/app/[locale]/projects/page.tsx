@@ -1,6 +1,5 @@
-import { Locale, useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
-import { use } from "react";
+import { Locale } from "next-intl";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 import { NavigationLinksMobile } from "@components/header/navigation-links-mobile";
@@ -15,9 +14,9 @@ import Footer from "@components/footer/footer";
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params;
 
   const titles = {
     en: "Our Portfolio - Web Development Projects | Indevix",
@@ -60,10 +59,10 @@ export async function generateMetadata({
   };
 }
 
-export default function ProjectsPage({ params }: PageParams) {
-  const { locale } = use(params);
+export default async function ProjectsPage({ params }: PageParams) {
+  const { locale } = await params;
   setRequestLocale(locale as Locale);
-  const t = useTranslations("Navigation");
+  const t = await getTranslations("Navigation");
 
   return (
     <main>

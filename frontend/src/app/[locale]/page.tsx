@@ -5,7 +5,6 @@ import { use } from "react";
 import Header from "@components/header/header";
 import Hero from "@components/hero/hero";
 import Projects from "@components/projects/projects";
-import Reviews from "@components/reviews/reviews";
 import Services from "@components/services/services";
 import Team from "@components/team/team";
 import Slogan from "@components/slogan/slogan";
@@ -25,7 +24,6 @@ export default function HomePage({ params }: PageParams) {
         <Header locale={locale} />
         <Hero />
         <Projects limit={3} />
-        {/* <Reviews /> */}
         <Services />
         <Team />
         <Slogan />

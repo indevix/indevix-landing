@@ -14,7 +14,6 @@ export function ProjectImage({
   title,
   className,
 }: ProjectImageProps) {
-  // SEO-оптимизированный alt текст
   const seoAlt = `${title} - ${alt} | Indevix Web Development Project`;
 
   return (

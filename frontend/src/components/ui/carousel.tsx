@@ -159,10 +159,7 @@ function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
       role="group"
       aria-roledescription="slide"
       data-slot="carousel-item"
-      className={cn(
-        "min-w-0 shrink-0 grow-0 basis-full",
-        className
-      )}
+      className={cn("min-w-0 shrink-0 grow-0 basis-full", className)}
       {...props}
     />
   );
@@ -278,7 +275,6 @@ function CarouselIndicator({
       data-slot="carousel-indicator"
       {...props}
     >
-      {/* Стрелка назад */}
       {showArrows && (
         <Button
           variant="ghost"
@@ -292,7 +288,6 @@ function CarouselIndicator({
         </Button>
       )}
 
-      {/* Точки-индикаторы */}
       <div
         className="flex items-center gap-2"
         role="tablist"
@@ -316,7 +311,6 @@ function CarouselIndicator({
         ))}
       </div>
 
-      {/* Стрелка вперед */}
       {showArrows && (
         <Button
           variant="ghost"

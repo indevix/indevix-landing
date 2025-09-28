@@ -71,8 +71,9 @@ export function StructuredData({ locale }: { locale: string }) {
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(organizationSchema),
+        __html: JSON.stringify(organizationSchema, null, 0),
       }}
+      suppressHydrationWarning
     />
   );
 }

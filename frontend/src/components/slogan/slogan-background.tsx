@@ -17,7 +17,6 @@ export default function SloganBackground({
 
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
-      {/* Минималистичные градиентные пятна */}
       <motion.div
         className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-white/[0.02] to-transparent rounded-full blur-3xl"
         animate={{
@@ -45,7 +44,6 @@ export default function SloganBackground({
         }}
       />
 
-      {/* Тонкие линии связи между активными словами */}
       {activeWords > 1 && (
         <motion.div
           className="absolute inset-0"
@@ -75,7 +73,6 @@ export default function SloganBackground({
         </motion.div>
       )}
 
-      {/* Пульсирующая центральная точка при максимальной активности */}
       {activeWords >= 3 && (
         <motion.div
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-white/30 rounded-full"
@@ -91,7 +88,6 @@ export default function SloganBackground({
         />
       )}
 
-      {/* Тонкие частицы, появляющиеся при взаимодействии */}
       {isInteracting && (
         <>
           {[...Array(5)].map((_, i) => (

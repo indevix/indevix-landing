@@ -54,7 +54,6 @@ export default function SloganWord({
 
   const style = wordStyles[index % wordStyles.length];
 
-  // Разбиваем слово на символы для анимации разрушения/сборки
   const chars = useMemo(() => word.split(""), [word]);
 
   const handleClick = () => {
@@ -66,7 +65,6 @@ export default function SloganWord({
     onHover();
   };
 
-  // Анимация в зависимости от состояния
   const getWordAnimation = () => {
     switch (state) {
       case "hidden":
@@ -144,7 +142,6 @@ export default function SloganWord({
   };
 
   if (state === "destroying" || state === "assembling") {
-    // Разрушение/сборка по символам
     return (
       <div className="relative inline-block">
         {chars.map((char, charIndex) => (
@@ -240,12 +237,10 @@ export default function SloganWord({
           onMouseEnter={handleHover}
           onMouseLeave={() => setIsHovered(false)}
         >
-          {/* Основной контент */}
           <div className="relative z-10 px-6 py-3 md:px-10 md:py-5 font-bold text-lg md:text-2xl lg:text-3xl whitespace-nowrap">
             {word}
           </div>
 
-          {/* Тонкий световой эффект при hover */}
           <motion.div
             className="absolute inset-0 bg-white rounded-[25px]"
             initial={{ opacity: 0 }}
@@ -253,7 +248,6 @@ export default function SloganWord({
             transition={{ duration: 0.3 }}
           />
 
-          {/* Пульсирующий border при активности */}
           {state === "visible" && (
             <motion.div
               className="absolute inset-0 border border-white/20 rounded-[25px]"
@@ -268,10 +262,8 @@ export default function SloganWord({
             />
           )}
 
-          {/* Эффекты появления */}
           {state === "appearing" && (
             <>
-              {/* Блестки вокруг слова */}
               {[...Array(8)].map((_, i) => (
                 <motion.div
                   key={`sparkle-${i}`}
@@ -298,7 +290,6 @@ export default function SloganWord({
                 />
               ))}
 
-              {/* Волна расширения */}
               <motion.div
                 className="absolute inset-0 border-2 border-white/30 rounded-[25px]"
                 initial={{
@@ -316,7 +307,6 @@ export default function SloganWord({
                 }}
               />
 
-              {/* Световая вспышка */}
               <motion.div
                 className="absolute inset-0 bg-white rounded-[25px]"
                 initial={{ opacity: 0 }}
@@ -330,7 +320,6 @@ export default function SloganWord({
                 }}
               />
 
-              {/* Частицы разлетающиеся при появлении */}
               {[...Array(6)].map((_, i) => (
                 <motion.div
                   key={`appear-particle-${i}`}

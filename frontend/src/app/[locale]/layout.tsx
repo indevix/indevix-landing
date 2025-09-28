@@ -1,17 +1,10 @@
 import { notFound } from "next/navigation";
 import { Locale, hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
-import { Montserrat, Tektur } from "next/font/google";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 import { ReactNode } from "react";
 import { StructuredData } from "@/config/structured-data";
-
-const montserrat = Montserrat({ subsets: ["latin", "cyrillic"] });
-const tektur = Tektur({
-  subsets: ["latin", "cyrillic"],
-  variable: "--font-tektur",
-});
 
 type LayoutProps = {
   children: ReactNode;
@@ -29,11 +22,6 @@ export async function generateMetadata({
 }: Omit<LayoutProps, "children">) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
-
-  // const t = await getTranslations({
-  //   locale: locale as Locale,
-  //   namespace: "LocaleLayout",
-  // });
 
   const languages = Object.fromEntries(
     routing.locales.map((l) => [l, `${BASE_URL}/${l}`])
@@ -111,12 +99,8 @@ export async function generateMetadata({
       yandexBot: { index: true, follow: true },
     },
     verification: {
-      google: "YOUR_DATA",
-      yandex: ["YOUR_DATA"],
-      other: {
-        "msvalidate.01": ["YOUR_DATA"],
-        "facebook-domain-verification": ["YOUR_DATA"],
-      },
+      google: "KQ2EyHMvHLYmvEZUccc775R72cI8BnXzmnLqwdwrGo4",
+      yandex: ["8021321cbacec6af"],
     },
   };
 }
@@ -128,18 +112,11 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   setRequestLocale(locale);
 
   return (
-    <html className="min-h-full" lang={locale}>
-      <head>
-        <StructuredData locale={locale} />
-      </head>
-      <body
-        className={`${montserrat.className} ${tektur.variable} flex min-h-full flex-col bg-background`}
-      >
-        <div id="modal-root" />
-        <NextIntlClientProvider locale={locale as Locale}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <>
+      <StructuredData locale={locale} />
+      <NextIntlClientProvider locale={locale as Locale}>
+        {children}
+      </NextIntlClientProvider>
+    </>
   );
 }
