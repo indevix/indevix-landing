@@ -86,22 +86,6 @@ export async function generateMetadata({
       description: descriptions[locale as keyof typeof descriptions],
       images: ["/og-image.png"],
     },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-video-preview": -1,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-      },
-      yandexBot: { index: true, follow: true },
-    },
-    verification: {
-      google: "KQ2EyHMvHLYmvEZUccc775R72cI8BnXzmnLqwdwrGo4",
-      yandex: ["8021321cbacec6af"],
-    },
   };
 }
 
