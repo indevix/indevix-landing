@@ -24,7 +24,7 @@ export function ProjectImageModal({
           <VisuallyHidden>
             <DialogTitle>{title}</DialogTitle>
           </VisuallyHidden>
-          <div className="overflow-y-auto max-h-[90vh]">
+          <div className="overflow-y-auto scrollbar-hide max-h-[90vh]">
             <Image
               src={src}
               alt={alt}

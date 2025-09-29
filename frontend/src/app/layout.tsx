@@ -19,8 +19,8 @@ const BASE_URL = "https://indevix.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    template: "%s | Indevix",
-    default: "Indevix - IT Services & Web Development Company",
+    template: "Indevix | %s",
+    default: "IT Services & Web Development Company",
   },
   description:
     "Boost your business with tailored IT solutions. Web development, automation, custom software, and 24/7 support. Trusted by 50+ companies.",

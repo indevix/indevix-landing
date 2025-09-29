@@ -28,10 +28,10 @@ export async function generateMetadata({
   ) as Record<string, string>;
 
   const titles = {
-    en: "Indevix - IT Services & Web Development Company",
-    ru: "Indevix - IT услуги и веб-разработка",
-    tr: "Indevix - IT Hizmetleri ve Web Geliştirme",
-    ky: "Indevix - IT кызматтары жана веб иштеп чыгуу",
+    en: "Indevix | IT Services & Web Development Company",
+    ru: "Indevix | IT услуги и веб-разработка",
+    tr: "Indevix | IT Hizmetleri ve Web Geliştirme",
+    ky: "Indevix | IT кызматтары жана веб иштеп чыгуу",
   };
 
   const descriptions = {

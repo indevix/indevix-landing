@@ -4,7 +4,7 @@ export const projectsData: Project[] = [
   {
     title: "Underground",
     kind: "Landing Page",
-    tags: ["2 weeks", "Design", "Development", "Planning", "Copywriting"],
+    tags: ["2 weeks", "Design", "Development", "Planning"],
     url: "/projects/underground.png",
   },
   {
@@ -16,7 +16,7 @@ export const projectsData: Project[] = [
   {
     title: "Gurman CRM",
     kind: "CRM System",
-    tags: ["3 months", "Design", "Development", "Planning"],
+    tags: ["3 months", "Development", "Planning"],
     url: "/projects/gurman-crm.jpeg",
   },
 ];

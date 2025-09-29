@@ -29,10 +29,10 @@ export default function Projects({ limit, all = false }: ProjectsProps) {
         )}
       </section>
       {all ? null : (
-        <Button className="w-full sm:w-[440px] lg:w-[40%] xl:w-[30%] py-5 px-[30px] ">
+        <Button className="w-full sm:w-[440px] lg:w-[40%] xl:w-[30%] p-0">
           <Link
             href="/projects"
-            className="text-base font-medium md:text-xl flex items-center gap-[10px] md:gap-5"
+            className="text-base w-full py-5 px-[30px] font-medium md:text-xl flex items-center gap-[10px] md:gap-5"
           >
             {t("all projects")}
 

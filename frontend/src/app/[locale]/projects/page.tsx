@@ -99,7 +99,7 @@ export default async function ProjectsPage({ params }: PageParams) {
         </div>
       </header>
       <section className="container mx-auto px-[15px] py-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-center mb-10">
+        <h1 className="text-3xl md:text-5xl font-bold text-center">
           {t("all projects")}
         </h1>
         <Projects all={true} />
