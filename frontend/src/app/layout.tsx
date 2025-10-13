@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     default: "IT Services & Web Development Company",
   },
   description:
-    "Boost your business with tailored IT solutions. Web development, automation, custom software, and 24/7 support. Trusted by 50+ companies.",
+    "We build custom web and AI solutions for businesses. From automation to CRM and software — we turn complex processes into efficient systems.",
   keywords:
-    "web development, IT services, software development, business automation, CRM, веб разработка, IT услуги, разработка ПО, автоматизация бизнеса",
+    "web development company, custom software development, AI automation for business, business process automation software, web app development for startups, AI integration for websites, digital transformation partner, CRM and ERP software development, AI chatbot and workflow automation, business automation solutions for SMEs",
   alternates: {
     canonical: "/en",
     languages: {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     url: "/en",
     title: "Indevix - IT Services & Web Development Company",
     description:
-      "Boost your business with tailored IT solutions. Web development, automation, custom software, and 24/7 support. Trusted by 50+ companies.",
+      "We build custom web and AI solutions for businesses. From automation to CRM and software — we turn complex processes into efficient systems.",
     siteName: "Indevix",
     locale: "en",
     type: "website",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Indevix - IT Services",
+        alt: "Indevix OG",
       },
     ],
   },
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html className="min-h-full">
+    <html className="min-h-full" lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

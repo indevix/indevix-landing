@@ -19,10 +19,10 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const titles = {
-    en: "Our Portfolio - Web Development Projects | Indevix",
-    ru: "Наше портфолио - проекты веб-разработки | Indevix",
-    tr: "Portföyümüz - Web Geliştirme Projeleri | Indevix",
-    ky: "Биздин портфолио - веб иштеп чыгуу долбоорлору | Indevix",
+    en: "Our Portfolio - Web Development Projects",
+    ru: "Наше портфолио - проекты веб-разработки",
+    tr: "Portföyümüz - Web Geliştirme Projeleri",
+    ky: "Биздин портфолио - веб иштеп чыгуу долбоорлору",
   };
 
   const descriptions = {

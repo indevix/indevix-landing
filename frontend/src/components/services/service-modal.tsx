@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "motion/react";
 import { createPortal } from "react-dom";
 import { useEffect, useState } from "react";
-import { X } from "lucide-react";
+import { X, ArrowRight } from "lucide-react";
 import type { Service } from "@/types/service.types";
 
 interface ServiceModalProps {
@@ -163,22 +163,30 @@ export function ServiceModal({ service, isOpen, onClose }: ServiceModalProps) {
             </motion.div>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 pt-6 border-t border-white/10"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.5 }}
             >
-              <motion.div
-                className="flex-1"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+              <Button
+                asChild
+                size="lg"
+                className="w-full group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-primary px-6 font-medium text-primary-foreground transition-all duration-300"
+                onClick={onClose}
               >
-                <Button className="w-full p-0" size="lg" onClick={onClose}>
-                  <a className="w-full py-3 px-6" href="#request">
+                <a href="#request">
+                  <div className="absolute inset-0 -z-10 flex items-center justify-center">
+                    <span className="absolute h-[400%] w-0 translate-x-[-100%] rotate-45 bg-white/20 transition-all duration-700 ease-in-out group-hover:w-[400%] group-hover:translate-x-[100%]" />
+                  </div>
+                  <span className="relative z-10 flex items-center gap-2">
                     {s("order_service")}
-                  </a>
-                </Button>
-              </motion.div>
+                    <ArrowRight
+                      size={16}
+                      className="transition-transform duration-300 group-hover:translate-x-1"
+                    />
+                  </span>
+                </a>
+              </Button>
             </motion.div>
           </motion.div>
         </motion.div>

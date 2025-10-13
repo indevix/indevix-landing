@@ -57,6 +57,7 @@ export default function SloganWord({
   const chars = useMemo(() => word.split(""), [word]);
 
   const handleClick = () => {
+    setIsHovered(false);
     onClick();
   };
 

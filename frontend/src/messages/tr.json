@@ -203,7 +203,7 @@
         "id": 1,
         "name": "Timur",
         "position": ["CEO", "Project Manager"],
-        "photo": "/team/timur.png"
+        "photo": "/team/timur.jpg"
       },
       {
         "id": 2,
@@ -214,19 +214,19 @@
       {
         "id": 3,
         "name": "Sanjar",
-        "position": ["Lead Developer", "Senior Backend Developer"],
+        "position": ["Team Lead", "Senior Backend Developer"],
         "photo": "/team/sanjar.png"
       },
       {
         "id": 4,
         "name": "Bekzhan",
-        "position": ["Lead Developer", "Senior Frontend Developer"],
+        "position": ["Team Lead", "Senior Frontend Developer"],
         "photo": "/team/bekzhan.png"
       },
       {
         "id": 5,
         "name": "Muhamed-Ali",
-        "position": ["Lead Developer", "Senior Backend Developer"],
+        "position": ["Team Lead", "Senior Backend Developer"],
         "photo": "/team/muhamed_ali.png"
       }
     ]
@@ -243,17 +243,17 @@
   },
 
   "Request": {
-    "title": "Let's discuss your project",
-    "subtitle": "Straight to the point",
-    "description": "During the first call, we will clearly define your task, evaluate possible solutions, and immediately filter out unsuitable approaches. You will gain a clear understanding of the tools that actually work for your business.",
+    "title": "Projenizi konuşalım.",
+    "subtitle": "Doğrudan konuya girelim.",
+    "description": "İlk görüşmede, görevinizi net bir şekilde tanımlar, olası çözümleri değerlendirir ve uygun olmayan yaklaşımları hemen eleyiz. İşiniz için gerçekten işe yarayan araçları açıkça anlarsınız.",
     "first_name": "Timur",
     "second_name": "Shermamatov",
     "position": "CEO"
   },
 
   "Footer": {
-    "Disclaimer": "This site is for informational purposes only and is not a public offer under any circumstances",
-    "Copyright": "© Indevix. All rights reserved.",
+    "Disclaimer": "Bu site yalnızca bilgilendirme amaçlıdır ve hiçbir koşulda bir kamu teklifi niteliği taşımaz.",
+    "Copyright": "© Indevix. Tüm hakları saklıdır.",
     "Trademark": "Trademark",
     "Info": "OsOO \"Endeviks\" \nİNN 01808202510327, \nKayıt numarası: 319228-3301-OOO \nYasal adres: Kırgız Cumhuriyeti, Bişkek, \nPleninsky Bölgesi, Bokonbayeva, 233, 17"
   }

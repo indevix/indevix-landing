@@ -201,7 +201,7 @@
         "id": 1,
         "name": "Тимур",
         "position": ["CEO", "Project Manager"],
-        "photo": "/team/timur.png"
+        "photo": "/team/timur.jpg"
       },
       {
         "id": 2,
@@ -212,19 +212,19 @@
       {
         "id": 3,
         "name": "Санжар",
-        "position": ["Lead Developer", "Senior Backend Developer"],
+        "position": ["Team Lead", "Senior Backend Developer"],
         "photo": "/team/sanjar.png"
       },
       {
         "id": 4,
         "name": "Бекжан",
-        "position": ["Lead Developer", "Senior Frontend Developer"],
+        "position": ["Team Lead", "Senior Frontend Developer"],
         "photo": "/team/bekzhan.png"
       },
       {
         "id": 5,
         "name": "Мухамед-Али",
-        "position": ["Lead Developer", "Senior Backend Developer"],
+        "position": ["Team Lead", "Senior Backend Developer"],
         "photo": "/team/muhamed_ali.png"
       }
     ]

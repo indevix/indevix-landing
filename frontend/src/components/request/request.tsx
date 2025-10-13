@@ -59,7 +59,7 @@ export default function Request() {
         <div className="flex sm:justify-center">
           <div className="relative w-[200px] h-[200px] md:w-[300px] md:h-[300px] 2xl:w-[350px] 2xl:h-[350px]">
             <Image
-              src="/team/timur.png"
+              src="/team/timur.jpg"
               alt="Игорь Костромин"
               fill
               sizes="(min-width: 1024px) 350px, 300px"

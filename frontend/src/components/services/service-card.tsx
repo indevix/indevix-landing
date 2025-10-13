@@ -151,7 +151,7 @@ export function ServiceCard({ service }: { service: Service }) {
             </span>
 
             <motion.div
-              className="absolute inset-0 bg-primary"
+              className="absolute inset-0 bg-primary rounded-[100px]"
               initial={{ scale: 0, opacity: 0 }}
               animate={{
                 scale: isHovered ? 1 : 0,
