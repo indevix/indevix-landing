@@ -1,17 +1,11 @@
-export type WordState =
-  | "hidden"
-  | "appearing"
-  | "visible"
-  | "destroying"
-  | "assembling";
+export type WordState = "hidden" | "visible" | "exploding";
 
 export interface SloganWordProps {
   word: string;
   index: number;
   state: WordState;
   onClick: () => void;
-  onHover: () => void;
-  delay: number;
+  onAnimationComplete: () => void;
 }
 
 export interface SloganParticle {

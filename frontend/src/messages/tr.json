@@ -116,24 +116,6 @@
         "position": "Pazarlama Bölümü Müdürü",
         "text": "Stüdyo ekibinin her zaman ulaşılabilir olması, verdiği sözlerin ve eylemlerin sorumluluğunu alması, hızlı ve düzenli çalışması bizim için önemli. Kısacası, kaybetmek istemeyeceğiniz güvenilir bir ortak. Başarılı projeler diliyoruz ve uzun vadeli iş birliğini umuyoruz.",
         "image": "/projects/example.png"
-      },
-      {
-        "id": 2,
-        "company": "client2",
-        "logo": "/reviews/example.png",
-        "name": "Ekaterina L.",
-        "position": "Pazarlama Uzmanı",
-        "text": "Indevix ile bir yıldan uzun süredir çalışıyoruz. Bu sürede birkaç landing sayfası, sunum ve hatta bir logo hazırladılar. Her zaman ulaşılabilirler, yardımcı olmaya ve yönlendirmeye hazırlar. Şablon çözümler sunmak yerine gerçekten düşünerek bize en uygun seçenekleri öneriyorlar.",
-        "image": "/projects/example.png"
-      },
-      {
-        "id": 3,
-        "company": "client3",
-        "logo": "/reviews/example.png",
-        "name": "Aleksey S.",
-        "position": "Pazarlama Direktörü",
-        "text": "Indevix ile iş birliğimizden çok memnunuz. Landing ve sunum tasarımı sipariş ettik. Her şey hızlı ve kaliteli şekilde, tüm taleplerimiz dikkate alınarak yapıldı. Ekip her zaman ulaşılabilir ve her konuda yardımcı olmaya hazır. Tavsiye ederim!",
-        "image": "/projects/example.png"
       }
     ]
   },

@@ -6,7 +6,7 @@ import Header from "@components/header/header";
 import Hero from "@components/hero/hero";
 import Projects from "@components/projects/projects";
 import Services from "@components/services/services";
-import Team from "@components/team/team";
+// import Team from "@components/team/team";
 import Slogan from "@components/slogan/slogan";
 import Request from "@components/request/request";
 import Footer from "@components/footer/footer";
@@ -25,7 +25,7 @@ export default function HomePage({ params }: PageParams) {
         <Hero />
         <Projects limit={3} />
         <Services />
-        <Team />
+        {/*<Team />*/}
         <Slogan />
         <Request />
         <Footer />

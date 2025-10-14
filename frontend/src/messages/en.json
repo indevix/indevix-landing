@@ -116,24 +116,6 @@
         "position": "Head of Marketing Department",
         "text": "It is important that the studio’s team is always in touch, takes responsibility for their promises and actions, and works quickly and in an organized manner. In a word—a reliable partner you don’t want to lose. We wish you successful projects and look forward to long-term positive cooperation.",
         "image": "/projects/example.png"
-      },
-      {
-        "id": 2,
-        "company": "client2",
-        "logo": "/reviews/example.png",
-        "name": "Ekaterina L.",
-        "position": "Marketing Specialist",
-        "text": "We have been working with Indevix for over a year. During this time, they created several landing pages, presentations, and even a logo for us. Always in touch, always ready to help and advise. I like that they don’t offer template solutions—they really think through the task and propose options that fit us best.",
-        "image": "/projects/example.png"
-      },
-      {
-        "id": 3,
-        "company": "client3",
-        "logo": "/reviews/example.png",
-        "name": "Aleksey S.",
-        "position": "Marketing Director",
-        "text": "Very satisfied with our cooperation with Indevix. We ordered a landing page and presentation design. Everything was done quickly, with high quality, and with all requirements considered. The team is always available and ready to help with any questions. Recommended!",
-        "image": "/projects/example.png"
       }
     ]
   },
