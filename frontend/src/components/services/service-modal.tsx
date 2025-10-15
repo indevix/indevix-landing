@@ -171,7 +171,7 @@ export function ServiceModal({ service, isOpen, onClose }: ServiceModalProps) {
               <Button
                 asChild
                 size="lg"
-                className="w-full group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-primary px-6 font-medium text-primary-foreground transition-all duration-300"
+                className="w-full group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-[100px] bg-primary px-6 font-medium text-primary-foreground transition-all duration-300"
                 onClick={onClose}
               >
                 <a href="#request">
@@ -192,6 +192,6 @@ export function ServiceModal({ service, isOpen, onClose }: ServiceModalProps) {
         </motion.div>
       )}
     </AnimatePresence>,
-    modalRoot
+    modalRoot,
   );
 }
