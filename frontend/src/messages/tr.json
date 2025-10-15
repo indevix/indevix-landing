@@ -16,6 +16,7 @@
     "reviews": "Yorumlar",
     "services": "Hizmetler",
     "team": "Takım",
+    "request": "Mesaj",
     "mobileMenuDescription": "Site gezinmesi"
   },
 
@@ -222,6 +223,11 @@
     "3": "hazır",
     "4": "çözümlere",
     "5": "dönüştürüyoruz"
+  },
+
+  "Stack": {
+    "title": "Teknoloji Yığınımız",
+    "subtitle": "Müşterilerimizin ihtiyaçlarını karşılayan yüksek kaliteli çözümler sunmak için modern ve güvenilir teknolojiler kullanıyoruz."
   },
 
   "Request": {

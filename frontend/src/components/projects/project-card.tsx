@@ -15,7 +15,9 @@ export function ProjectCard({ kind, title, tags }: ProjectCardProps) {
         </p>
         <h3 className="mt-2 text-xl font-semibold md:text-2xl">{title}</h3>
       </div>
-      <ProjectTags tags={tags} />
+      <div className="min-h-20">
+        <ProjectTags tags={tags} />
+      </div>
     </div>
   );
 }

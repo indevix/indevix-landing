@@ -9,7 +9,7 @@ import { WordState } from "./types";
 export default function Slogan() {
   const t = useTranslations("Slogan");
   const [wordStates, setWordStates] = useState<Map<number, WordState>>(
-    new Map()
+    new Map(),
   );
   const [isInteracting, setIsInteracting] = useState(false);
 
@@ -22,7 +22,6 @@ export default function Slogan() {
 
   const handleAnimationComplete = useCallback((index: number) => {
     setWordStates((prev) => new Map(prev).set(index, "visible"));
-    // A timeout to smooth out the interaction state change
     setTimeout(() => setIsInteracting(false), 500);
   }, []);
 
@@ -67,7 +66,7 @@ export default function Slogan() {
             key={index}
             word={word}
             index={index}
-            state={wordStates.get(index) || "visible"} // Default to visible after initial animation
+            state={wordStates.get(index) || "visible"}
             onClick={() => handleWordClick(index)}
             onAnimationComplete={() => handleAnimationComplete(index)}
           />

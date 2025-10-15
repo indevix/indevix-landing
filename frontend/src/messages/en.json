@@ -16,6 +16,7 @@
     "reviews": "Reviews",
     "services": "Services",
     "team": "Team",
+    "request": "Message",
     "mobileMenuDescription": "Site navigation"
   },
 
@@ -222,6 +223,11 @@
     "3": "ideas",
     "4": "into ready-made",
     "5": "solutions"
+  },
+
+  "Stack": {
+    "title": "Our Technology Stack",
+    "subtitle": "We use modern and reliable technologies to deliver high-quality solutions that meet the needs of our clients."
   },
 
   "Request": {

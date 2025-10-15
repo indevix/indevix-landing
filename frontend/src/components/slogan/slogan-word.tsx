@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useMemo } from "react";
 import { SloganWordProps, WordStyle } from "./types";
 
-// Styles can be kept as they are, they are for visual variety
 const wordStyles: WordStyle[] = [
   {
     background:
