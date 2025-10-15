@@ -239,6 +239,17 @@
     "position": "CEO"
   },
 
+  "NotFound": {
+    "title": "SAYFA BULUNAMADI",
+    "subtitle": "Aradığınız sayfa mevcut değil veya başka bir yere taşınmış.",
+    "goBack": "GERİ DÖN",
+    "home": "ANA SAYFA",
+    "explore": "HİZMETLERİMİZİ KEŞFEDİN",
+    "development": "Geliştirme",
+    "projects": "Projeler",
+    "team": "Takım"
+  },
+
   "Footer": {
     "Disclaimer": "Bu site yalnızca bilgilendirme amaçlıdır ve hiçbir koşulda bir kamu teklifi niteliği taşımaz.",
     "Copyright": "© Indevix. Tüm hakları saklıdır.",

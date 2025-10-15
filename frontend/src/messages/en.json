@@ -239,6 +239,17 @@
     "position": "CEO"
   },
 
+  "NotFound": {
+    "title": "PAGE NOT FOUND",
+    "subtitle": "The page you're looking for doesn't exist or has been moved to another location.",
+    "goBack": "GO BACK",
+    "home": "HOME",
+    "explore": "EXPLORE OUR SERVICES",
+    "development": "Development",
+    "projects": "Projects",
+    "team": "Team"
+  },
+
   "Footer": {
     "Disclaimer": "This site is for informational purposes only and is not a public offer under any circumstances",
     "Copyright": "© Indevix. All rights reserved.",
