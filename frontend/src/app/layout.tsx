@@ -75,7 +75,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Props) {
   return (
-    <html className="min-h-full" lang="en">
+    <html className="min-h-full scroll-smooth" lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
